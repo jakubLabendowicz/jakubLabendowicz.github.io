@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo|Raleway|Roboto&display=swap');
+
+@keyframes panelAnimation {
+  0% {
+    width: 40%;
+  }
+  100% {
+    width: 41%;
+  }
+}
+
+@keyframes moduleAnimation {
+  0% {
+    width: 60%;
+  }
+  100% {
+    width: 61%;
+  }
+}
+
+@keyframes title_animation {
+  0%{
+    opacity: .0;
+  }
+  100%{
+    opacity:inherit;
+  }
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+  margin: 0px;
+  font-size: 20px;
+}
+
+.container {
+  --firstColor: #9e9e9e;
+  --secondColor: #212121;
+  --thirdColor: white;
+  --fourthColor: black;
+}
+
+.panelBg{
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  width: 40%;
+  bottom: 0px;
+  width: 50%;
+  height: 100%;
+  background-color: var(--secondColor);
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+.panelBg:hover{
+  animation: panelAnimation 1s 1;
+  animation-fill-mode:forwards;
+  z-index: 1;
+}
+
+.panel {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  width: 40%;
+}
+
+.panelContent {
+  padding: 80px;
+}
+
+.panelTitle {
+  /* font-family: 'Archivo', sans-serif; */
+  color: var(--thirdColor);
+  font-size: 100px;
+  animation: title_animation 5s 1;
+}
+
+.panelTitleWord {
+  float: left;
+}
+
+#hello.panelTitleWord {
+
+}
+
+#world {
+  padding-left: 0px;
+  visibility: hidden;
+  width: 0px;
+}
+
+#exclamationMark.panelTitleWord {
+  /* font-family: 'Archivo', sans-serif; */
+  color: var(--thirdColor);
+  font-size: 100px;
+  background-color: var(--secondColor);
+  border-style: none;
+}
+
+#exclamationMark.panelTitleWord:focus {
+  outline-style: none;
+}
+
+.panelSubtitle {
+  /* font-family: 'Archivo', sans-serif; */
+  color: var(--firstColor);
+  background-color: var(--secondColor);
+  border-style: none;
+  font-size: 100px;
+  animation: title_animation 5s 1;
+  padding: 0px;
+}
+
+.panelSubtitle:focus {
+  outline-style: none;
+}
+
+.panelBar {
+  position: fixed;
+  top: 50%;
+  left: 0px;
+  padding: 0px 0px 0px 30px;
+}
+
+.panelBarButton {
+
+}
+
+.panelBarButtonLink {
+  font-size: 40px;
+  padding: 15px 0px;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--thirdColor);
+}
+
+.panelBarButtonLink:hover {
+  padding-left: 10px;
+}
+
+.moduleBg{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 60%;
+  height: 100%;
+  background-color: var(--thirdColor);
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+.moduleBg:hover{
+  animation: moduleAnimation 1s 1;
+  animation-fill-mode:forwards;
+  z-index: 1;
+}
+
+.module {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  width: 60%;
+  right: 0px;
+  scroll-behavior: smooth;
+  overflow-y:auto;
+}
+
+.moduleContent {
+  padding: 100px;
+  color: var(--fourthColor);
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #00000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--firstColor);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondColor);
+}
