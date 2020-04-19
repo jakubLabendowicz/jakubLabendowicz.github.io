@@ -1,0 +1,8 @@
+Przyłączenie CSS:
+<link rel="stylesheet" href="../all/bar/bar.css">
+<link rel="stylesheet" href="../all/module/module.css">
+<link rel="stylesheet" href="../all/panel/panel.css">
+<link rel="stylesheet" href="../all/panel/panelsColors.css">
+
+Przyłączenie JS:
+<script src="../all/panel/panel.js"></script>

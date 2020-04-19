@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+.p-panel {
+  font-family: 'Raleway', sans-serif;
+  padding: 50px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+
+  width: 300px;
+  visibility: hidden;
+  overflow-y:auto;
+}
+
+.p-panelTitle {
+  font-weight: bold;
+  text-align: center;
+
+  width: 300px;
+  font-size: 60px;
+  color: white;
+}
+
+.p-category {
+  padding: 50px 0px;
+}
+
+.p-categoryTitle {
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.p-widget {
+  padding: 10px 0px;
+}
+
+.p-widgetTitle {
+  font-weight: 600;
+  font-size: 45px;
+  color: black;
+}
+
+.p-element {
+  padding: 5px 0px;
+}
+
+.p-elementTitle {
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.p-elementSubtitle {
+
+}
+
+.p-elementIcon {
+
+}
+
+.p-elementContent {
+
+}

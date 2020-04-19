@@ -1,0 +1,27 @@
+#mainPanel {
+  background-color: #424242;
+}
+
+#appsPanel {
+  background-color: #37474f;
+}
+
+#allSearchPanel {
+  background-color: #0d47a1;
+}
+
+#allTimePanel {
+  background-color: #2e7d32;
+}
+
+#allNotesPanel {
+  background-color: #ffc107;
+}
+
+#allCollectionsPanel {
+  background-color: #f57f17;
+}
+
+#portalPanel {
+  background-color: #b71c1c;
+}
