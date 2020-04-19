@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>All search</title>
+    <link rel="shortcut icon" href="default/AllSearchIcon.png">
+
+    <link rel="stylesheet" href="../all/bar/bar.css">
+    <link rel="stylesheet" href="../all/module/module.css">
+    <link rel="stylesheet" href="../all/panel/panel.css">
+    <link rel="stylesheet" href="../all/panel/panelsColors.css">
+
+    <link rel="stylesheet" href="default/default.css">
+    <link rel="stylesheet" href="start/start.css">
+  </head>
+  <body id="body">
+    <div class="p-panel" id="appsPanel">
+      <div class="p-panelTitle">Apps</div>
+      <div class="p-category">
+        <div class="p-widget">
+          <div class="p-widgetTitle">Favorite apps</div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="file:///C:/Users/Uzytkownik/Documents/All%20soft/All%20search/index.html">All search</a>
+          </div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="file:///C:/Users/Uzytkownik/Documents/All%20soft/All%20time/index.html">All time</a>
+          </div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="file:///C:/Users/Uzytkownik/Documents/All%20soft/All%20notes/index.html">All note</a>
+          </div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="file:///C:/Users/Uzytkownik/Documents/All%20soft/All%20collections/index.html">All collections</a>
+          </div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="file:///C:/Users/Uzytkownik/Documents/All%20soft/Portal/index.html">Portal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-panel" id="allSearchPanel">
+      <div class="p-panelTitle">All search</div>
+      <div class="p-category">
+        <div class="p-widget">
+          <div class="p-widgetTitle">Modules</div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="home.html">Home</a>
+          </div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="bookmarks.html">Bookmarks</a>
+          </div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="history.html">History</a>
+          </div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="settings.html">Settings</a>
+          </div>
+        </div>
+        <div class="p-widget">
+        </div>
+      </div>
+    </div>
+
+    <div class="p-panel" id="allCollectionsPanel"></div>
+
+    <div class="b-bar" id="bar">
+      <div class="m-moduleTitle">Home</div>
+      <div class="b-panelsBar">
+        <button type="button" class="b-panelButton" id="panelButton" onclick="panelOpener('allSearchPanel')">Search panel</button>
+        <button type="button" class="b-panelButton" id="panelButton" onclick="panelOpener('appsPanel')">Apps panel</button>
+      </div>
+    </div>
+
+    <div class="container" id="container">
+      <header>All search</header>
+      <div class="searchBar">
+        <input type="text" class="textBar" id="textBar" placeholder="Write here">
+        <select class="searchSelector" id="searchSelector">
+          <option value="Google">Google</option>
+          <option value="Youtube">Youtube</option>
+          <option value="Netflix">Netflix</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Wikipedia">Wikipedia</option>
+        </select>
+      </div>
+      <button type="button" class="searchButton" id="searchButton" onclick="Search.autoSearch(), setHistory()">Search</button>
+    </div>
+
+    <script src="../all/panel/panel.js"></script>
+    <script src="start/search.js"></script>
+    <script src="start/setHistory.js"></script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+- Wybór kolorów
+- Wybór tła
+- Wybór domyślnej wyszukiwarki
+- Dodawanie nowych wyszukiwarek

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bookmarks - All search</title>
+    <link rel="shortcut icon" href="default/AllSearchIcon.png">
+
+    <link rel="stylesheet" href="../all/bar/bar.css">
+    <link rel="stylesheet" href="../all/module/module.css">
+    <link rel="stylesheet" href="../all/panel/panel.css">
+    <link rel="stylesheet" href="../all/panel/panelsColors.css">
+
+    <link rel="stylesheet" href="default/default.css">
+  </head>
+  <body id="body">
+    <div class="p-panel" id="appsPanel">
+      <div class="p-panelTitle">Apps</div>
+      <div class="p-category">
+        <div class="p-widget">
+          <div class="p-widgetTitle">Favorite apps</div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="file:///C:/Users/Uzytkownik/Documents/All%20soft/All%20search/index.html">All search</a>
+          </div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="file:///C:/Users/Uzytkownik/Documents/All%20soft/All%20time/index.html">All time</a>
+          </div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="file:///C:/Users/Uzytkownik/Documents/All%20soft/All%20notes/index.html">All note</a>
+          </div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="file:///C:/Users/Uzytkownik/Documents/All%20soft/All%20collections/index.html">All collections</a>
+          </div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="file:///C:/Users/Uzytkownik/Documents/All%20soft/Portal/index.html">Portal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-panel" id="allSearchPanel">
+      <div class="p-panelTitle">All search</div>
+      <div class="p-category">
+        <div class="p-widget">
+          <div class="p-widgetTitle">Modules</div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="home.html">Home</a>
+          </div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="bookmarks.html">Bookmarks</a>
+          </div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="history.html">History</a>
+          </div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="settings.html">Settings</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-panel" id="allCollectionsPanel"></div>
+
+    <div class="b-bar" id="bar">
+      <div class="m-moduleTitle">Bookmarks</div>
+      <div class="b-panelsBar">
+        <button type="button" class="b-panelButton" id="panelButton" onclick="panelOpener('allSearchPanel')">Search panel</button>
+        <button type="button" class="b-panelButton" id="panelButton" onclick="panelOpener('appsPanel')">Apps panel</button>
+      </div>
+    </div>
+
+    <script src="../all/panel/panel.js"></script>
+  </body>
+</html>

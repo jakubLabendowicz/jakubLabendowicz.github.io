@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+header {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  position: fixed;
+  top: -200%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 120px;
+}
+
+.container {
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 65px;
+  width: 1110px;
+  color: black;
+  font-size: 30px;
+}
+
+.searchBar {
+  float: left;
+  width: 1000px;
+  margin: 0px;
+  background-color: white;
+  padding-left: 10px;
+}
+
+.textBar {
+  float: left;
+  font-family: 'Raleway', sans-serif;
+  height: 65px;
+  width: 840px;
+  font-size: 24px;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+}
+
+.textBar:focus {
+  outline: none;
+}
+
+.searchSelector {
+  font-family: 'Raleway', sans-serif;
+  height: 65px;
+  width: 150px;
+  font-size: 24px;
+  border: 0px;
+}
+
+.searchSelector:focus {
+  outline: none;
+}
+
+.searchButton {
+  font-family: 'Raleway', sans-serif;
+  height: 65px;
+  width: 90px;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  font-size: 24px;
+  background-color: #0d47a1;
+}
+
+.searchButton:hover {
+  background-color: white;
+}
