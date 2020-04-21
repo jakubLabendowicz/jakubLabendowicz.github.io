@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Jakub Łabendowicz - Projects</title>
+    <title>Jakub Łabendowicz - projects</title>
     <link rel="icon" href="icon.png">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
@@ -22,6 +22,7 @@
               <div class="panelBarButton"><a href="index.html" class="panelBarButtonLink">Hello</a></div>
               <div class="panelBarButton"><a href="me.html" class="panelBarButtonLink">About me</a></div>
               <div class="panelBarButton"><a href="projects.html" class="panelBarButtonLink">Projects</a></div>
+              <div class="panelBarButton"><button type="button" name="button" class="panelBarButtonLink" onclick="contactPanel()" id="contactPanelButton">Contact</button></div>
             </div>
           </div>
         </div>
@@ -33,9 +34,15 @@
           </div>
         </div>
       </main>
+      <div class="contactPanelBg" id="contactPanelBg" style="visibility: hidden">
+        <div class="contactPanel" id="contactPanel" style="visibility: hidden">
+
+        </div>
+      </div>
     </div>
 
 
     <script type="text/javascript" src="easterEggs.js"></script>
+    <script type="text/javascript" src="contactPanel.js"></script>
   </body>
 </html>

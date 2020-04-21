@@ -158,6 +158,15 @@ body{
   padding-left: 10px;
 }
 
+#contactPanelButton {
+  background-color: var(--secondColor);
+  border-style: none;
+}
+
+#contactPanelButton:focus {
+  outline-style: none;
+}
+
 .moduleBg{
   position: fixed;
   top: 0px;
