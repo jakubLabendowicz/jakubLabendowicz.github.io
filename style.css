@@ -18,6 +18,24 @@
   }
 }
 
+@keyframes openContactPanelBgAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 61%;
+  }
+}
+
+@keyframes closeContactPanelBgAnimation {
+  0% {
+    width: 61%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
 @keyframes title_animation {
   0%{
     opacity: .0;
@@ -171,6 +189,24 @@ body{
 .moduleContent {
   padding: 100px;
   color: var(--fourthColor);
+}
+
+.contactPanelBg {
+  position: fixed;
+  left: 39%;
+  top: 0px;
+  width: 61%;
+  height: 100%;
+  background-color: var(--secondColor);
+  z-index: 2;
+  color: var(--thirdColor);
+}
+
+.contactPanel {
+  position: fixed;
+  top: 0px;
+  left: 39%;
+  height: 100%;
 }
 
 ::-webkit-scrollbar {

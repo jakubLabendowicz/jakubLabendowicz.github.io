@@ -35,6 +35,5 @@ function showWorld() {
   world.style.padding = "0px 0px 0px 30px";
   world.style.visibility = "visible";
   world.style.width = "auto";
-  console.log("abc");
   sessionStorage.setItem('world', 'visible');
 }
