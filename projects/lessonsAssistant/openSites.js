@@ -2,7 +2,9 @@ var openingCheck = 0;
 
 function openLink(link, here = false) {
   if(here == true) {
-    window.open(link, '_self');
+    setTimeout(function() {
+      window.open(link, '_self');
+    }, 5000);
   }
   else {
     window.open(link);
