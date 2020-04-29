@@ -2,9 +2,7 @@ var openingCheck = 0;
 
 function openLink(link, here = false) {
   if(here == true) {
-    setTimeout(function() {
-      window.open(link, '_self');
-    }, 5000);
+    window.open(link, '_self');
   }
   else {
     window.open(link);
@@ -16,8 +14,6 @@ function checkTime(checkedDay, checkedHour_0, checkedHour_1) {
   var hour = date.getHours();
   var day = date.getDay();
 
-
-
   if(day == checkedDay && hour >= checkedHour_0 && hour < checkedHour_1) {
     console.log(day + " | " + hour);
     return true;
@@ -27,16 +23,10 @@ function checkTime(checkedDay, checkedHour_0, checkedHour_1) {
   }
 }
 
-function openSite(checkedDay, checkedHour_0, checkedHour_1, link_1, link_2 = '', link_3 = '') {
+function openSite(checkedDay, checkedHour_0, checkedHour_1, link, here = false) {
   if(checkTime(checkedDay, checkedHour_0, checkedHour_1)) {
     openingCheck++;
-    if(link_3 != '') {
-      openLink(link_3);
-    }
-    if(link_2 != '') {
-      openLink(link_2);
-    }
-    openLink(link_1, true);
+    openLink(link, here);
   }
 }
 
@@ -49,7 +39,9 @@ function openSites() {
   openSite(2, 16, 18, 'https://moodle1.cs.pollub.pl/course/view.php?id=1040');
 
   openSite(3, 8, 10, 'https://moodle1.cs.pollub.pl/course/view.php?id=747');
-  openSite(3, 10, 12, 'https://moodle1.cs.pollub.pl/course/view.php?id=841', 'https://classroom.google.com/u/3/c/NzcxOTg5MjI0MDZa?hl=pl', 'https://meetingsamer3.webex.com/webappng/sites/meetingsamer3/meeting/download/d0664ecb75d349cf8c63d86a905bb354');
+  openSite(3, 10, 12, 'https://moodle1.cs.pollub.pl/course/view.php?id=841');
+  openSite(3, 10, 12, 'https://classroom.google.com/u/3/c/NzcxOTg5MjI0MDZa?hl=pl');
+  openSite(3, 10, 12, 'https://meetingsamer3.webex.com/webappng/sites/meetingsamer3/meeting/download/d0664ecb75d349cf8c63d86a905bb354');
   openSite(3, 12, 14, 'https://moodle1.cs.pollub.pl/course/view.php?id=749');
 
   openSite(4, 8, 10, 'https://moodle1.cs.pollub.pl/course/view.php?id=749');
