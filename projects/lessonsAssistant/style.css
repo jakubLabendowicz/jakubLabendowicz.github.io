@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: black;
+  background-color: #01579b;
 }
 
 .button {
@@ -12,8 +12,9 @@ body {
   transform: translate(-50%, -50%);
   font-size: 50px;
   padding: 20px 70px;
-  background-color: white;
+  background-color: black;
   border-style: none;
+  color: white;
 }
 
 .button:focus {
@@ -21,7 +22,8 @@ body {
 }
 
 .button:hover {
-  background-color: #b71c1c;
+  background-color: white;
+  color: black;
 }
 
 .title {
@@ -31,5 +33,5 @@ body {
   transform: translate(-50%);
   font-size: 50px;
   padding: 50px;
-  color: white;
+  color: black;
 }
