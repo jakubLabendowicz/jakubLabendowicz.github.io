@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="openSites.js"></script>
   </head>
-  <body onload="openSites()">
+  <body>
+    <script type="text/javascript">
+      var wybor = prompt("Wprowadź grupę", "2.5.9");
+      openSites(wybor);
+    </script>
     <div class="title">Lessons assistant</div>
-    <button type="button" class="button" onclick="openSites()">Otwórz strony</button>
+    <button type="button" class="button" onclick="openSites(wybor)">Otwórz strony</button>
   </body>
 </html>
