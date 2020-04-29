@@ -52,7 +52,7 @@ function openSites() {
   openSite(5, 11, 14, 'https://moodle1.cs.pollub.pl/course/view.php?id=354');
 
   if(openingCheck == 0) {
-    var mLink = 'https://moodle1.cs.pollub.pl/my/';
-    openLink(mLink);
+    openLink('https://moodle1.cs.pollub.pl/my/');
+    openLink('https://classroom.google.com/u/3/h?hl=pl');
   }
 }
