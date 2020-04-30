@@ -52,6 +52,7 @@ function openSites(group) {
 
     //Czwartek
     openSite(4, 8, 10, 'https://moodle1.cs.pollub.pl/course/view.php?id=749');
+    openSite(4, 8, 10, 'https://us04web.zoom.us/j/72878456165?pwd=YWRabDZxbGpwek95MHZucVdHWmduQT09'); //???
 
     openSite(4, 10, 12, 'https://classroom.google.com/u/3/c/OTE2OTM2ODAzMTVa?hl=pl');
     openSite(4, 10, 12, 'https://meetingsamer3.webex.com/webappng/sites/meetingsamer3/meeting/download/d0664ecb75d349cf8c63d86a905bb354');
