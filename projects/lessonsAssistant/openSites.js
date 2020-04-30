@@ -58,7 +58,8 @@ function openSites(group) {
     openSite(4, 10, 12, 'https://meetingsamer3.webex.com/webappng/sites/meetingsamer3/meeting/download/d0664ecb75d349cf8c63d86a905bb354');
 
     openSite(4, 14, 16, 'https://moodle1.cs.pollub.pl/course/view.php?id=748');
-
+    openSite(4, 14, 16, 'https://us04web.zoom.us/j/8143659808');
+    
     //Piatek
     openSite(5, 8, 10, 'https://moodle1.cs.pollub.pl/course/view.php?id=821');
     openSite(5, 11, 14, 'https://moodle1.cs.pollub.pl/course/view.php?id=354');
