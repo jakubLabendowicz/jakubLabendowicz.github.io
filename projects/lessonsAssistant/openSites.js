@@ -34,7 +34,10 @@ function openSites(group) {
   if(group == '2.5.9') {
     //Poniedziałek
     openSite(1, 12, 14, 'https://moodle1.cs.pollub.pl/course/view.php?id=794');
+
     openSite(1, 14, 16, 'https://moodle1.cs.pollub.pl/course/view.php?id=750');
+    openSite(1, 14, 16, 'https://kgromaszek.my.webex.com/kgromaszek.my/e.php?MTID=m50101161ccd38e380c2cf196ef80c336');
+
     openSite(1, 16, 18, 'https://moodle1.cs.pollub.pl/course/view.php?id=808');
     openSite(1, 18, 20, 'https://moodle1.cs.pollub.pl/course/view.php?id=551');
 
@@ -58,8 +61,8 @@ function openSites(group) {
     openSite(4, 10, 12, 'https://meetingsamer3.webex.com/webappng/sites/meetingsamer3/meeting/download/d0664ecb75d349cf8c63d86a905bb354');
 
     openSite(4, 14, 16, 'https://moodle1.cs.pollub.pl/course/view.php?id=748');
-    openSite(4, 14, 16, 'https://us04web.zoom.us/j/8143659808');
-    
+    openSite(4, 14, 16, 'https://us04web.zoom.us/j/8143659808'); //???
+
     //Piatek
     openSite(5, 8, 10, 'https://moodle1.cs.pollub.pl/course/view.php?id=821');
     openSite(5, 11, 14, 'https://moodle1.cs.pollub.pl/course/view.php?id=354');
