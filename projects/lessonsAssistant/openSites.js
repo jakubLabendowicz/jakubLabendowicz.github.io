@@ -41,7 +41,7 @@ function openSites(group) {
     openSite(1, 16, 18, 'https://moodle1.cs.pollub.pl/course/view.php?id=808');
 
     openSite(1, 18, 20, 'https://moodle1.cs.pollub.pl/course/view.php?id=551');
-    openSite(1, 18, 20, 'https://us02web.zoom.us/j/4868286813?');
+    openSite(1, 18, 20, 'https://us02web.zoom.us/j/4868286813?pwd=ZDI4MG43OWpzNm9DM3l2L3J6NG96dz09');
 
     //Wtorek
     openSite(2, 16, 18, 'https://moodle1.cs.pollub.pl/course/view.php?id=1040');
