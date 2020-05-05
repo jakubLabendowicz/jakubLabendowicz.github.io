@@ -1,0 +1,15 @@
+{
+  "name": "Lessons Assistant",
+  "version": "1.0",
+  "description": "",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "options_page": "https://jakublabendowicz.github.io/projects/lessonsAssistant/home.html",
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["popup.js"],
+    "persistent": false
+  },
+  "manifest_version": 2
+}
