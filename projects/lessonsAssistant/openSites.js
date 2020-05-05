@@ -15,7 +15,6 @@ function checkTime(checkedDay, checkedHour_0, checkedHour_1) {
   var day = date.getDay();
 
   if(day == checkedDay && hour >= checkedHour_0 && hour < checkedHour_1) {
-    console.log(day + " | " + hour);
     return true;
   }
   else {
