@@ -1,0 +1,34 @@
+.m-widget {
+  background-color: white;
+  width: auto;
+  height: auto;
+  margin: 20px 0px;
+  color: black;
+  padding: 20px 30px;
+  border-radius: 20px;
+}
+
+.m-widgetTitle {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.m-element {
+  width: 100%;
+  /* border-top-style: solid;
+  border-top-color: #eeeeee;
+  border: 1px 0px 0px 0px; */
+  padding: 7px 0px;
+}
+
+#firstElement {
+  border-top-style: none;
+  border: 0px;
+}
+
+.m-elementTitle {
+  font-size: 20px;
+  font-weight: normal;
+  text-decoration: none;
+  color: black;
+}
