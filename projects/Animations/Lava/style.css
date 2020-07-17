@@ -1,0 +1,51 @@
+body{
+  margin; 0px;
+  background-color: pink;
+}
+
+.dot{
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  background-color: red;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0%;
+  opacity: .7;
+  animation: animation 10s infinite;
+}
+
+.dot1{
+
+}
+
+.dot2{
+  animation-delay: 2s;
+}
+
+.dot3{
+  animation-delay: 4s;
+}
+
+.dot4{
+  animation-delay: 6s;
+}
+
+.dot5{
+  animation-delay: 8s;
+}
+
+@keyframes animation {
+  0% 100%{
+    bottom: 0%;
+    background-color: red;
+  }
+  50%{
+    bottom: 75%;
+    background-color: blue;
+    height: 5000px;
+    width: 5000px;
+    border-radius: 10000px;
+  }
+}
