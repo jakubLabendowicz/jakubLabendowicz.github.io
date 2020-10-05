@@ -5,10 +5,31 @@
     <title>Lessons assistant</title>
     <link rel="icon" href="icon.png">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="../all/bar/bar.css">
+    <link rel="stylesheet" href="../all/module/module.css">
+    <link rel="stylesheet" href="../all/panel/panel.css">
+    <link rel="stylesheet" href="../all/panel/panelsColors.css">
+
     <script type="text/javascript" src="openSites.js"></script>
     <script type="text/javascript" src="sessionCountdown.js"></script>
   </head>
   <body onload="sessionCountdown()">
+
+    <div class="p-panel" id="allSchoolPanel">
+      <div class="p-panelTitle">All school</div>
+      <div class="p-category">
+        <div class="p-widget">
+          <div class="p-widgetTitle">Modules</div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="home.html">Lesson assistant</a>
+          </div>
+        </div>
+        <div class="p-widget">
+        </div>
+      </div>
+    </div>
+
     <script type="text/javascript">
       var wybor = prompt("Wprowadź grupę", "2.5.9");
       openSites(wybor);
