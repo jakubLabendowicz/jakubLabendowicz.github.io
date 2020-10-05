@@ -30,7 +30,7 @@ function openSite(checkedDay, checkedHour_0, checkedHour_1, link, here = false) 
 }
 
 function openSites(group) {
-  if(group == '3.5.9') {
+  if(group == '') {
     //Poniedziałek
     openSite(1, 8, 10, 'https://teams.microsoft.com/l/team/19%3a92ef024f5572438eab0968e5455cbb71%40thread.tacv2/conversations?groupId=9429e9d5-452e-4611-915a-d70d97b4d618&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8');
     openSite(1, 10, 12, 'https://teams.microsoft.com/l/team/19%3abbce6452d6434569b2d5eda0e25e6530%40thread.tacv2/conversations?groupId=9d35e1bd-420a-4fdc-8e5b-d87630c48cbc&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8');

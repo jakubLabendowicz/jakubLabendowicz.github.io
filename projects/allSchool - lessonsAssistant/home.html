@@ -16,8 +16,9 @@
     <script type="text/javascript" src="sessionCountdown.js"></script>
   </head>
   <body id="body" onload="sessionCountdown()">
+    <div class="p-panel" id="appsPanel"></div>
 
-    <div class="p-panel" id="allSchoolPanel">
+    <div class="p-panel" id="allSearchPanel">
       <div class="p-panelTitle">All school</div>
       <div class="p-category">
         <div class="p-widget">
@@ -31,13 +32,24 @@
       </div>
     </div>
 
+    <div class="p-panel" id="allCollectionsPanel"></div>
+
+    <div class="b-bar" id="bar">
+      <div class="m-moduleTitle">Lesson assistant</div>
+      <div class="b-panelsBar">
+        <button type="button" class="b-panelButton" id="panelButton" onclick="panelOpener('allSearchPanel')">Search panel</button>
+      </div>
+    </div>
+
     <script type="text/javascript">
-      var wybor = prompt("Wprowadź grupę", "2.5.9");
-      openSites(wybor);
+      openSites('');
     </script>
-    <div class="title">Lessons assistant</div>
-    <div class="sessionCountdown" id="sessionCountdown">aaa</div>
-    <button type="button" class="button" onclick="openSites(wybor)">Otwórz strony</button>
+
+    <div class="container" id="container">
+      <div class="title">Lessons assistant</div>
+      <div class="sessionCountdown" id="sessionCountdown">aaa</div>
+      <button type="button" class="button" onclick="openSites(wybor)">Otwórz strony</button>
+    </div>
 
     <script src="../all/panel/panel.js"></script>
   </body>
