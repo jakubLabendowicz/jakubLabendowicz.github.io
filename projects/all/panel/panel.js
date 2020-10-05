@@ -4,6 +4,7 @@ function panelOpener(panelName) {
     document.getElementById('appsPanel').style.visibility = "hidden";
     document.getElementById('allSearchPanel').style.visibility = "hidden";
     document.getElementById('allCollectionsPanel').style.visibility = "hidden";
+    document.getElementById('allSchoolPanel').style.visibility = "hidden";
 
     document.getElementById(panelName).style.visibility = "visible";
     document.getElementById('body').style.margin = "0px 0px 0px 400px";
@@ -18,6 +19,7 @@ function panelOpener(panelName) {
     document.getElementById('appsPanel').style.visibility = "hidden";
     document.getElementById('allSearchPanel').style.visibility = "hidden";
     document.getElementById('allCollectionsPanel').style.visibility = "hidden";
+    document.getElementById('allSchoolPanel').style.visibility = "hidden";
 
     document.getElementById('container').style.left = "50%";
   }

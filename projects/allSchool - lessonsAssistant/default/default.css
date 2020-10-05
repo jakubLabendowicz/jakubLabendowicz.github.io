@@ -1,5 +1,9 @@
-#allSearchPanel {
+#allSchoolPanel {
   visibility: visible;
+}
+
+#allSearchPanel {
+  visibility: hidden;
 }
 
 #appsPanel {
@@ -12,7 +16,7 @@
 
 body {
   margin-left: 400px;
-  /* background-image: url("https://i.pinimg.com/originals/39/97/78/399778f170d632bf3b51173699ea661b.jpg"); */
+  background-image: url("https://i.pinimg.com/originals/de/cf/70/decf70a0c2d8676b4aabfce942a26606.jpg");
 }
 
 #container {
