@@ -30,48 +30,31 @@ function openSite(checkedDay, checkedHour_0, checkedHour_1, link, here = false) 
 }
 
 function openSites(group) {
-  if(group == '2.5.9') {
+  if(group == '3.5.9') {
     //Poniedziałek
-    openSite(1, 12, 14, 'https://moodle1.cs.pollub.pl/course/view.php?id=794');
-
-    openSite(1, 14, 16, 'https://moodle1.cs.pollub.pl/course/view.php?id=750');
-    openSite(1, 14, 16, 'https://kgromaszek.my.webex.com/kgromaszek.my/e.php?MTID=m50101161ccd38e380c2cf196ef80c336'); //???
-
-    openSite(1, 16, 18, 'https://moodle1.cs.pollub.pl/course/view.php?id=808');
-
-    openSite(1, 18, 20, 'https://moodle1.cs.pollub.pl/course/view.php?id=551');
-    openSite(1, 18, 20, 'https://us02web.zoom.us/j/4868286813?pwd=ZDI4MG43OWpzNm9DM3l2L3J6NG96dz09');
-
+    openSite(1, 8, 10, '');
+    openSite(1, 10, 12, 'https://teams.microsoft.com/l/team/19%3abbce6452d6434569b2d5eda0e25e6530%40thread.tacv2/conversations?groupId=9d35e1bd-420a-4fdc-8e5b-d87630c48cbc&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8');
+    openSite(1, 18, 20, 'https://teams.microsoft.com/l/team/19%3a8c94662d27c345798edf01f08e714400%40thread.tacv2/conversations?groupId=25f1c02d-5a72-4f23-820f-c4bcc99ec020&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8');
     //Wtorek
-    openSite(2, 16, 18, 'https://moodle1.cs.pollub.pl/course/view.php?id=1040');
-    openSite(2, 16, 18, 'https://moodle1.cs.pollub.pl/mod/chat/gui_header_js/index.php?id=647');
-
+    openSite(2, 10, 12, '');
+    openSite(2, 12, 14, '');
+    openSite(2, 16, 18, 'https://teams.microsoft.com/l/team/19%3ae5d895f1f7564a51b9485827b9339e05%40thread.tacv2/conversations?groupId=69c38904-fa86-48c8-a61c-18bace725af3&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8');
+    openSite(2, 18, 20, 'https://teams.microsoft.com/l/channel/19%3a52d8bb3c66fa436b8612aa730f639722%40thread.tacv2/Og%25C3%25B3lny?groupId=bef6ec60-1996-4fab-ab3b-6ccdb9f758e4&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8');
     //Środa
-    openSite(3, 8, 10, 'https://moodle1.cs.pollub.pl/course/view.php?id=747');
-
-    openSite(3, 10, 12, 'https://moodle1.cs.pollub.pl/course/view.php?id=841');
-    openSite(3, 10, 12, 'https://classroom.google.com/u/3/c/NzcxOTg5MjI0MDZa?hl=pl');
-    openSite(3, 10, 12, 'https://meetingsamer3.webex.com/webappng/sites/meetingsamer3/meeting/download/d0664ecb75d349cf8c63d86a905bb354');
-
-    openSite(3, 12, 14, 'https://moodle1.cs.pollub.pl/course/view.php?id=749');
-
-    //Czwartek
-    openSite(4, 8, 10, 'https://moodle1.cs.pollub.pl/course/view.php?id=749');
-    openSite(4, 8, 10, 'https://us04web.zoom.us/j/72878456165?pwd=YWRabDZxbGpwek95MHZucVdHWmduQT09'); //???
-
-    openSite(4, 10, 12, 'https://classroom.google.com/u/3/c/OTE2OTM2ODAzMTVa?hl=pl');
-    openSite(4, 10, 12, 'https://meetingsamer3.webex.com/webappng/sites/meetingsamer3/meeting/download/d0664ecb75d349cf8c63d86a905bb354');
-
-    openSite(4, 14, 16, 'https://moodle1.cs.pollub.pl/course/view.php?id=748');
-    openSite(4, 14, 16, 'https://us04web.zoom.us/j/8143659808'); //???
-
+    openSite(3, 8, 10, '');
+    openSite(3, 10, 12, '');
+    openSite(3, 12, 14, 'https://teams.microsoft.com/l/team/19%3a13bf774bf743454aa7b6cbdd90fbefb9%40thread.tacv2/conversations?groupId=2cf05332-9198-479a-9eeb-8dbd9f01bc36&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8');
+    openSite(3, 16, 18, 'https://teams.microsoft.com/l/team/19%3a4883b2f83090487c8ee71a3ef2431b55%40thread.tacv2/conversations?groupId=6d99993b-4c63-4d93-a0d8-3046ad4e04af&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8');
+    openSite(3, 18, 20, '');
     //Piatek
-    openSite(5, 8, 10, 'https://moodle1.cs.pollub.pl/course/view.php?id=821');
-    openSite(5, 11, 14, 'https://moodle1.cs.pollub.pl/course/view.php?id=354');
+    openSite(5, 8, 10, '');
+    openSite(5, 10, 12, '');
+    openSite(5, 12, 14, '');
+    openSite(5, 18, 20, 'https://teams.microsoft.com/l/team/19%3a2deea6793f5a48199f92efcecfb86844%40thread.tacv2/conversations?groupId=4a624bd3-8f3f-4399-9c2f-2040a970b039&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8');
+
 
     if(openingCheck == 0) {
-      openLink('https://moodle1.cs.pollub.pl/my/');
-      openLink('https://classroom.google.com/u/3/h?hl=pl');
+      openLink('https://moodle3.cs.pollub.pl/course/index.php?categoryid=23');
     }
   }
   else if(group == '2.10.20') {
