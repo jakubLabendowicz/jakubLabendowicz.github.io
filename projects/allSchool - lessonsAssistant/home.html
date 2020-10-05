@@ -17,7 +17,21 @@
     <script type="text/javascript" src="default/sessionCountdown.js"></script>
   </head>
   <body id="body" onload="sessionCountdown()">
-    <div class="p-panel" id="appsPanel"></div>
+    <div class="p-panel" id="appsPanel">
+      <div class="p-panelTitle">Apps</div>
+      <div class="p-category">
+        <div class="p-widget">
+          <div class="p-widgetTitle">Favorite apps</div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allsearch/home.html">All search</a>
+          </div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allSchool%20-%20lessonsAssistant/home.html">All school</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="p-panel" id="allSearchPanel"></div>
 
     <div class="p-panel" id="allSchoolPanel">
@@ -53,6 +67,7 @@
       <div class="m-moduleTitle">Lesson assistant</div>
       <div class="b-panelsBar">
         <button type="button" class="b-panelButton" id="panelButton" onclick="panelOpener('allSchoolPanel')">School panel</button>
+        <button type="button" class="b-panelButton" id="panelButton" onclick="panelOpener('appsPanel')">Apps panel</button>
       </div>
     </div>
 
