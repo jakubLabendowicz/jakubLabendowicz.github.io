@@ -1,6 +1,8 @@
 function panelOpener(panelName) {
   var panelVisibility = document.getElementById(panelName).style.visibility;
   if(panelVisibility == "hidden") {
+    document.getElementById('mainPanel').style.visibility = "hidden";
+    document.getElementById('panelsPanel').style.visibility = "hidden";
     document.getElementById('appsPanel').style.visibility = "hidden";
     document.getElementById('allSearchPanel').style.visibility = "hidden";
     document.getElementById('allCollectionsPanel').style.visibility = "hidden";
@@ -16,6 +18,8 @@ function panelOpener(panelName) {
     document.getElementById('body').style.margin = "0px 0px 0px 0px";
     document.getElementById('bar').style.left = "0px";
 
+    document.getElementById('mainPanel').style.visibility = "hidden";
+    document.getElementById('panelsPanel').style.visibility = "hidden";
     document.getElementById('appsPanel').style.visibility = "hidden";
     document.getElementById('allSearchPanel').style.visibility = "hidden";
     document.getElementById('allCollectionsPanel').style.visibility = "hidden";
