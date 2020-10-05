@@ -14,25 +14,37 @@
     <link rel="stylesheet" href="history/history.css">
   </head>
   <body id="body" onload="viewHistory()">
+    <div class="p-panel" id="mainPanel">
+      <div class="p-panelTitle">Main panel</div>
+      <div class="p-category">
+        <div class="p-widget">
+          <div class="p-widgetTitle">Favorite panels</div>
+          <div class="p-element">
+            <button type="button" class="p-elementTitle" id="panelButton" onclick="panelOpener('appsPanel')">Apps panel</button>
+          </div>
+          <div class="p-element">
+            <button type="button" class="p-elementTitle" id="panelButton" onclick="panelOpener('allSchoolPanel')">School panel</button>
+          </div>
+          <div class="p-element">
+            <button type="button" class="p-elementTitle" id="panelButton" onclick="panelOpener('allSearchPanel')">Search panel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-panel" id="panelsPanel">
+    </div>
+
     <div class="p-panel" id="appsPanel">
       <div class="p-panelTitle">Apps</div>
       <div class="p-category">
         <div class="p-widget">
           <div class="p-widgetTitle">Favorite apps</div>
           <div class="p-element">
-            <a class="p-elementTitle" href="file:///C:/Users/Uzytkownik/Documents/All%20soft/All%20search/index.html">All search</a>
+            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allsearch/home.html">All search</a>
           </div>
           <div class="p-element">
-            <a class="p-elementTitle" href="file:///C:/Users/Uzytkownik/Documents/All%20soft/All%20time/index.html">All time</a>
-          </div>
-          <div class="p-element">
-            <a class="p-elementTitle" href="file:///C:/Users/Uzytkownik/Documents/All%20soft/All%20notes/index.html">All note</a>
-          </div>
-          <div class="p-element">
-            <a class="p-elementTitle" href="file:///C:/Users/Uzytkownik/Documents/All%20soft/All%20collections/index.html">All collections</a>
-          </div>
-          <div class="p-element">
-            <a class="p-elementTitle" href="file:///C:/Users/Uzytkownik/Documents/All%20soft/Portal/index.html">Portal</a>
+            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allSchool%20-%20lessonsAssistant/home.html">All school</a>
           </div>
         </div>
       </div>
@@ -56,6 +68,35 @@
             <a class="p-elementTitle" href="settings.html">Settings</a>
           </div> -->
         </div>
+        <div class="p-widget">
+        </div>
+      </div>
+    </div>
+
+    <div class="p-panel" id="allSchoolPanel">
+      <div class="p-panelTitle">All school</div>
+      <div class="p-category">
+        <div class="p-widget">
+          <div class="p-widgetTitle">Countdown</div>
+          <div class="p-element">
+            <div class="p-elementTitle" id="sessionCountdown">aaa</div>
+          </div>
+        </div>
+        <div class="p-widget">
+          <div class="p-widgetTitle">Modules</div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allSchool%20-%20lessonsAssistant/home.html">Lesson assistant</a>
+          </div>
+        </div>
+        <div class="p-widget">
+          <div class="p-widgetTitle">Shorts</div>
+          <div class="p-element">
+            <a class="p-elementTitle" target="_blank" href="https://moodle3.cs.pollub.pl/my/">Moodle</a>
+          </div>
+          <div class="p-element">
+            <a class="p-elementTitle" target="_blank" href="http://weii.pollub.pl/files/18/attachment/3859_Informatyka,I,stopien,-,3,semestr.pdf">Schedule</a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -64,8 +105,8 @@
     <div class="b-bar" id="bar">
       <div class="m-moduleTitle">History</div>
       <div class="b-panelsBar">
-        <button type="button" class="b-panelButton" id="panelButton" onclick="panelOpener('allSearchPanel')">Search panel</button>
-        <button type="button" class="b-panelButton" id="panelButton" onclick="panelOpener('appsPanel')">Apps panel</button>
+        <button type="button" class="b-panelButton" id="panelButton" onclick="panelOpener('mainPanel')">⭐️ Main panel</button>
+        <button type="button" class="b-panelButton" id="panelButton" onclick="panelOpener('allSearchPanel')">🔎 Search</button>
       </div>
     </div>
 
