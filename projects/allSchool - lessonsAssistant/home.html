@@ -23,13 +23,13 @@
         <div class="p-widget">
           <div class="p-widgetTitle">Favorite panels</div>
           <div class="p-element">
-            <button type="button" class="p-elementTitle" id="panelButton" onclick="panelOpener('appsPanel')">Apps panel</button>
+            <button type="button" class="p-elementTitleButton" id="panelButton" onclick="panelOpener('appsPanel')" style="background-color: #b71c1c;">Apps panel</button>
           </div>
           <div class="p-element">
-            <button type="button" class="p-elementTitle" id="panelButton" onclick="panelOpener('allSchoolPanel')">School panel</button>
+            <button type="button" class="p-elementTitleButton" id="panelButton" onclick="panelOpener('allSchoolPanel')" style="background-color: #b71c1c;">School panel</button>
           </div>
           <div class="p-element">
-            <button type="button" class="p-elementTitle" id="panelButton" onclick="panelOpener('allSearchPanel')">Search panel</button>
+            <button type="button" class="p-elementTitleButton" id="panelButton" onclick="panelOpener('allSearchPanel')" style="background-color: #b71c1c;">Search panel</button>
           </div>
         </div>
       </div>
@@ -80,7 +80,7 @@
       <div class="p-panelTitle">All school</div>
       <div class="p-category">
         <div class="p-widget">
-          <div class="p-widgetTitle">Countdown</div>
+          <!-- <div class="p-widgetTitle">Countdown</div> -->
           <div class="p-element">
             <div class="p-elementTitle" id="sessionCountdown">aaa</div>
           </div>
@@ -89,6 +89,18 @@
           <div class="p-widgetTitle">Modules</div>
           <div class="p-element">
             <a class="p-elementTitle" href="home.html">Lesson assistant</a>
+          </div>
+        </div>
+        <div class="p-widget">
+          <div class="p-widgetTitle">Now lesson</div>
+          <div class="p-element">
+            <button type="button" class="p-elementTitleButton" onclick="openSites()" style="background-color: #1B5E20;">Open links</button>
+          </div>
+          <div class="p-element">
+            <button type="button" class="p-elementTitleButton" onclick="openFirstLink()" style="background-color: #1B5E20;">Open Teams</button>
+          </div>
+          <div class="p-element">
+            <button type="button" class="p-elementTitleButton" onclick="openSecondLink()" style="background-color: #1B5E20;">Open Moodle</button>
           </div>
         </div>
         <div class="p-widget">
@@ -118,9 +130,9 @@
 
     <div class="container" id="container">
       <script type="text/javascript">
-        openSites('');
+        openSites();
       </script>
-      <button type="button" class="button" onclick="openSites('')">Open links</button>
+      <button type="button" class="button" onclick="openSites()">Open links</button>
     </div>
 
     <script src="../all/panel/panel.js"></script>
