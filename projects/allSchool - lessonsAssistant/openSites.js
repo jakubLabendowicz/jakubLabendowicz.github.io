@@ -35,8 +35,8 @@ function openFirstLink() {
   openSite(1, 10, 12, 'https://teams.microsoft.com/l/team/19%3abbce6452d6434569b2d5eda0e25e6530%40thread.tacv2/conversations?groupId=9d35e1bd-420a-4fdc-8e5b-d87630c48cbc&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8');
   openSite(1, 18, 20, 'https://teams.microsoft.com/l/team/19%3a8c94662d27c345798edf01f08e714400%40thread.tacv2/conversations?groupId=25f1c02d-5a72-4f23-820f-c4bcc99ec020&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8');
   //Wtorek
-  openSite(2, 10, 12, '');
-  openSite(2, 12, 14, '');
+  openSite(2, 10, 12, 'https://teams.microsoft.com/l/team/19%3af8e12c4061684a1bb89f83118a8a5ea3%40thread.tacv2/conversations?groupId=0bfe4905-6637-4133-a63c-b6c30dd7d5fd&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8');
+  openSite(2, 12, 14, 'https://teams.microsoft.com/l/team/19%3af5e4d71945fa45289ed4abc706c21b66%40thread.tacv2/conversations?groupId=724bd13b-f889-4df8-aecc-1b79997c9383&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8');
   openSite(2, 16, 18, 'https://teams.microsoft.com/l/team/19%3ae5d895f1f7564a51b9485827b9339e05%40thread.tacv2/conversations?groupId=69c38904-fa86-48c8-a61c-18bace725af3&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8');
   openSite(2, 18, 20, 'https://teams.microsoft.com/l/channel/19%3a52d8bb3c66fa436b8612aa730f639722%40thread.tacv2/Og%25C3%25B3lny?groupId=bef6ec60-1996-4fab-ab3b-6ccdb9f758e4&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8');
   //Środa
