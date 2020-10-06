@@ -60,8 +60,8 @@ function openSecondLink() {
   //Wtorek
   openSite(2, 10, 12, '');
   openSite(2, 12, 14, '');
-  openSite(2, 16, 18, '');
-  openSite(2, 18, 20, '');
+  openSite(2, 14, 16, 'https://moodle3.cs.pollub.pl/course/view.php?id=376#section-0');
+  openSite(2, 16, 20, '');
   //Środa
   openSite(3, 8, 10, '');
   openSite(3, 10, 12, '');
