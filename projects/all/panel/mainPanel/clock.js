@@ -1,12 +1,17 @@
+function addZero(dane) {
+  if(dane<10) dane = "0" + dane;
+  return dane;
+}
+
 function clock() {
   const date = new Date();
-  var hour = date.getHours();
-  var minute = date.getMinutes();
-  var second = date.getSeconds();
-  var day = date.getDate();
-  var month = date.getMonth()+1;
-  var year = date.getFullYear();
-  document.getElementById('clock').innerHTML = hour + " : " + minute + " : " + second;
+  var hour = addZero(date.getHours());
+  var minute = addZero(date.getMinutes());
+  var second = addZero(date.getSeconds());
+  var day = addZero(date.getDate());
+  var month = addZero(date.getMonth()+1);
+  var year = addZero(date.getFullYear());
+  document.getElementById('clock').innerHTML = hour + ":" + minute;
   document.getElementById('date').innerHTML = (day).toString() + "." + (month).toString() + "." + (year).toString();
-  setTimeOut("clock()", 1000);
+  setTimeout("clock()", 1000);
 }
