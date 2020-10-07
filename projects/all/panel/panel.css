@@ -38,7 +38,7 @@
 
 .p-widgetTitle {
   font-weight: 600;
-  font-size: 45px;
+  font-size: 40px;
   color: black;
 }
 
@@ -47,13 +47,13 @@
 }
 
 .p-elementTitle {
-  font-size: 30px;
+  font-size: 25px;
   text-decoration: none;
   color: black;
 }
 
 .p-elementTitleButton {
-  font-size: 30px;
+  font-size: 25px;
   text-decoration: none;
   color: black;
   border-style: none;

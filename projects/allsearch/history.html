@@ -18,15 +18,24 @@
       <div class="p-panelTitle">Main panel</div>
       <div class="p-category">
         <div class="p-widget">
+          <div class="p-widgetTitle">Favorite apps</div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allsearch/home.html">All search</a>
+          </div>
+          <div class="p-element">
+            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allSchool%20-%20lessonsAssistant/home.html">All school</a>
+          </div>
+        </div>
+        <div class="p-widget">
           <div class="p-widgetTitle">Favorite panels</div>
+          <!-- <div class="p-element">
+            <button type="button" class="p-elementTitleButton" id="panelButton" onclick="panelOpener('appsPanel')" style="background-color: #b71c1c;">Apps panel</button>
+          </div> -->
           <div class="p-element">
-            <button type="button" class="p-elementTitle" id="panelButton" onclick="panelOpener('appsPanel')">Apps panel</button>
+            <button type="button" class="p-elementTitleButton" id="panelButton" onclick="panelOpener('allSchoolPanel')" style="background-color: #b71c1c;">School panel</button>
           </div>
           <div class="p-element">
-            <button type="button" class="p-elementTitle" id="panelButton" onclick="panelOpener('allSchoolPanel')">School panel</button>
-          </div>
-          <div class="p-element">
-            <button type="button" class="p-elementTitle" id="panelButton" onclick="panelOpener('allSearchPanel')">Search panel</button>
+            <button type="button" class="p-elementTitleButton" id="panelButton" onclick="panelOpener('allSearchPanel')" style="background-color: #b71c1c;">Search panel</button>
           </div>
         </div>
       </div>
@@ -77,15 +86,27 @@
       <div class="p-panelTitle">All school</div>
       <div class="p-category">
         <div class="p-widget">
-          <div class="p-widgetTitle">Countdown</div>
+          <div class="p-widgetTitle">Modules</div>
           <div class="p-element">
-            <div class="p-elementTitle" id="sessionCountdown">aaa</div>
+            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allSchool%20-%20lessonsAssistant/home.html">Home</a>
+          </div>
+        </div>
+        <div class="p-widget" style="padding-top: 30px; padding-bottom: 30px;">
+          <div class="p-widgetTitle"></div>
+          <div class="p-element">
+            <a class="p-elementTitle" id="sessionCountdown" target="_blank" href="http://www.wm.pollub.pl/files/24/attachment/10077_ZarzadzenieNrR-45-2020,-,organizacja,roku,akademickiego.pdf" style="background-color: white; padding: 20px; border-radius: 20px; font-size: 20px;">aaa</a>
           </div>
         </div>
         <div class="p-widget">
-          <div class="p-widgetTitle">Modules</div>
+          <div class="p-widgetTitle">Present lesson</div>
           <div class="p-element">
-            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allSchool%20-%20lessonsAssistant/home.html">Lesson assistant</a>
+            <button type="button" class="p-elementTitleButton" onclick="openSites()" style="background-color: #1B5E20;">Open links</button>
+          </div>
+          <div class="p-element">
+            <button type="button" class="p-elementTitleButton" onclick="openFirstLink()" style="background-color: #1B5E20;">Open Teams</button>
+          </div>
+          <div class="p-element">
+            <button type="button" class="p-elementTitleButton" onclick="openSecondLink()" style="background-color: #1B5E20;">Open Moodle</button>
           </div>
         </div>
         <div class="p-widget">
@@ -95,6 +116,12 @@
           </div>
           <div class="p-element">
             <a class="p-elementTitle" target="_blank" href="http://weii.pollub.pl/files/18/attachment/3859_Informatyka,I,stopien,-,3,semestr.pdf">Schedule</a>
+          </div>
+          <div class="p-element">
+            <a class="p-elementTitle" target="_blank" href="https://ehms.pollub.pl/standard/">EHMS</a>
+          </div>
+          <div class="p-element">
+            <a class="p-elementTitle" target="_blank" href="https://www.facebook.com/groups/480463459387051">Facebook</a>
           </div>
         </div>
       </div>
