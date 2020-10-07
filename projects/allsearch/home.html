@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="default/default.css">
     <link rel="stylesheet" href="start/start.css">
   </head>
-
   <body id="body">
     <div class="p-panel" id="mainPanel">
-      <div class="p-panelTitle">Main panel</div>
+      <div class="p-panelTitle" id="clock">Main</div>
+      <div class="p-panelSubtitle" id="date">panel</div>
       <div class="p-category">
         <div class="p-widget">
           <div class="p-widgetTitle">Favorite apps</div>
@@ -24,7 +24,7 @@
             <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allsearch/home.html">All search</a>
           </div>
           <div class="p-element">
-            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allSchool%20-%20lessonsAssistant/home.html">All school</a>
+            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allSchool/home.html">All school</a>
           </div>
         </div>
         <div class="p-widget">
@@ -38,6 +38,8 @@
           <div class="p-element">
             <button type="button" class="p-elementTitleButton" id="panelButton" onclick="panelOpener('allSearchPanel')" style="background-color: #b71c1c;">Search panel</button>
           </div>
+        </div>
+        <div class="p-widget">
         </div>
       </div>
     </div>
@@ -54,7 +56,7 @@
             <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allsearch/home.html">All search</a>
           </div>
           <div class="p-element">
-            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allSchool%20-%20lessonsAssistant/home.html">All school</a>
+            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allSchool/home.html">All school</a>
           </div>
         </div>
       </div>
@@ -66,13 +68,13 @@
         <div class="p-widget">
           <div class="p-widgetTitle">Modules</div>
           <div class="p-element">
-            <a class="p-elementTitle" href="home.html">Home</a>
+            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allsearch/home.html">Home</a>
           </div>
           <!-- <div class="p-element">
             <a class="p-elementTitle" href="bookmarks.html">Bookmarks</a>
           </div> -->
           <div class="p-element">
-            <a class="p-elementTitle" href="history.html">History</a>
+            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allsearch/history.html">History</a>
           </div>
           <!-- <div class="p-element">
             <a class="p-elementTitle" href="settings.html">Settings</a>
@@ -89,7 +91,7 @@
         <div class="p-widget">
           <div class="p-widgetTitle">Modules</div>
           <div class="p-element">
-            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allSchool%20-%20lessonsAssistant/home.html">Home</a>
+            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allSchool/home.html">Home</a>
           </div>
         </div>
         <div class="p-widget" style="padding-top: 30px; padding-bottom: 30px;">
@@ -154,7 +156,9 @@
     </div>
 
     <script src="../all/panel/panel.js"></script>
-    <script src="../allSchool - lessonsAssistant/default/sessionCountdown.js"></script>
+    <script src="../all/panel/mainPanel/clock.js"></script>
+
+    <script src="../allSchool/default/sessionCountdown.js"></script>
     <script src="start/search.js"></script>
     <script src="start/setHistory.js"></script>
   </body>
