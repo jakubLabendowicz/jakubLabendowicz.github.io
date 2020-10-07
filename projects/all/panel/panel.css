@@ -2,13 +2,13 @@
 
 .p-panel {
   font-family: 'Raleway', sans-serif;
-  padding: 50px 50px 0px 50px;
+  padding: 50px 40px 0px 40px;
   position: fixed;
   left: 0px;
   top: 0px;
   bottom: 0px;
 
-  width: 300px;
+  width: 320px;
   visibility: hidden;
   overflow-y:auto;
 }
@@ -17,7 +17,7 @@
   font-weight: bold;
   text-align: center;
 
-  width: 300px;
+  width: 320px;
   font-size: 60px;
   color: white;
 }
@@ -26,13 +26,13 @@
   font-weight: bold;
   text-align: center;
 
-  width: 300px;
-  font-size: 30px;
+  width: 320px;
+  font-size: 20px;
   color: white;
 }
 
 .p-category {
-  padding: 50px 0px;
+  margin: 50px 0px;
 }
 
 .p-categoryTitle {
@@ -42,7 +42,9 @@
 }
 
 .p-widget {
-  padding: 10px 0px;
+  padding: 10px 10px;
+  margin: 10px 0px;
+  border-radius: 20px
 }
 
 .p-widgetTitle {
@@ -51,8 +53,14 @@
   color: black;
 }
 
+.p-widgetSubtitle {
+  /* font-weight: 600; */
+  font-size: 15px;
+  color: black;
+}
+
 .p-element {
-  padding: 5px 0px;
+  margin: 10px 0px;
 }
 
 .p-elementTitle {
@@ -67,10 +75,6 @@
   color: black;
   border-style: none;
   padding: 0px;
-}
-
-.p-elementSubtitle {
-
 }
 
 .p-elementIcon {
