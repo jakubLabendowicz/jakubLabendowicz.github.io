@@ -16,9 +16,10 @@
     <script type="text/javascript" src="openSites.js"></script>
     <script type="text/javascript" src="default/sessionCountdown.js"></script>
   </head>
-  <body id="body" onload="sessionCountdown()">
+  <body id="body" onload="sessionCountdown(), clock()">
     <div class="p-panel" id="mainPanel">
-      <div class="p-panelTitle">Main panel</div>
+      <div class="p-panelTitle" id="clock">Main</div>
+      <div class="p-panelSubtitle" id="date">panel</div>
       <div class="p-category">
         <div class="p-widget">
           <div class="p-widgetTitle">Favorite apps</div>
@@ -148,5 +149,6 @@
     </div>
 
     <script src="../all/panel/panel.js"></script>
+    <script src="../all/panel/mainPanel/clock.js"></script>
   </body>
 </html>
