@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="default/default.css">
     <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet" href="../allSearch/widget/widget.css">
+
     <script type="text/javascript" src="openSites.js"></script>
   </head>
   <body id="body" onload="sessionCountdown(), clock()">
@@ -82,7 +84,22 @@
             <a class="p-elementTitle" href="settings.html">Settings</a>
           </div> -->
         </div>
-        <div class="p-widget">
+        <div class="p-widget" style="background-color: white">
+          <div class="p-widgetTitle"></div>
+          <div class="p-widgetSubtitle">Search</div>
+          <div class="p-element">
+            <input type="text" class="p-elementTitle, searchWidgetTextBar" id="textBarWidget" placeholder="Write here">
+          </div>
+          <div class="p-element">
+            <select class="p-elementTitle, searchWidgetSearchSelector" id="searchSelectorWidget">
+              <option value="Google">Google</option>
+              <option value="Youtube">Youtube</option>
+              <option value="Netflix">Netflix</option>
+              <option value="Facebook">Facebook</option>
+              <option value="Wikipedia">Wikipedia</option>
+            </select>
+            <button type="button" class="p-elementTitle, searchWidgetSearchButton" id="searchButton" onclick="Search.autoSearch('Widget'), setHistory()">Search</button>
+          </div>
         </div>
       </div>
     </div>
@@ -153,5 +170,7 @@
     <script src="../all/panel/panel.js"></script>
     <script src="../all/panel/mainPanel/clock.js"></script>
     <script type="text/javascript" src="default/sessionCountdown.js"></script>
+    <script src="../allSearch/start/search.js"></script>
+    <script src="../allSearch/start/setHistory.js"></script>
   </body>
 </html>

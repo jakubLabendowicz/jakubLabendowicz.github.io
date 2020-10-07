@@ -67,9 +67,9 @@ class Search {
     window.open(Search.link);
   }
 
-  static autoSearch() {
-    Search.setText(document.getElementById('textBar').value);
-    Search.setSearch(document.getElementById('searchSelector').value);
+  static autoSearch(data) {
+    Search.setText(document.getElementById('textBar'+data).value);
+    Search.setSearch(document.getElementById('searchSelector'+data).value);
     Search.setLink();
     Search.openLink();
   }
