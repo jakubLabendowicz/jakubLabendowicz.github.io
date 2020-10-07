@@ -7,9 +7,9 @@ function addZero(variable) {
   }
 }
 
-function setHistory() {
-  var text = document.getElementById('textBar').value;
-  var search = document.getElementById('searchSelector').value;
+function setHistory(data) {
+  var text = document.getElementById('textBar'+data).value;
+  var search = document.getElementById('searchSelector'+data).value;
 
   const historyDate = new Date();
   var hours = historyDate.getHours();
