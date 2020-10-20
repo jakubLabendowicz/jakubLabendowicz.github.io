@@ -2,8 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>All school</title>
-    <link rel="icon" href="default/allSchoolIcon.png">
+    <title>History - All search</title>
+    <link rel="shortcut icon" href="default/AllSearchIcon.png">
 
     <link rel="stylesheet" href="../all/bar/bar.css">
     <link rel="stylesheet" href="../all/module/module.css">
@@ -11,13 +11,10 @@
     <link rel="stylesheet" href="../all/panel/panelsColors.css">
 
     <link rel="stylesheet" href="default/default.css">
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet" href="../allSearch/widget/widget.css">
-
-    <script type="text/javascript" src="openSites.js"></script>
+    <link rel="stylesheet" href="history/history.css">
+    <link rel="stylesheet" href="widget/widget.css">
   </head>
-  <body id="body" onload="sessionCountdown(), clock()">
+  <body id="body" onload="viewHistory(), sessionCountdown(), clock()">
     <div class="p-panel" id="mainPanel">
       <div class="p-panelTitle" id="clock">Main</div>
       <div class="p-panelSubtitle" id="date">panel</div>
@@ -98,7 +95,7 @@
               <option value="Facebook">Facebook</option>
               <option value="Wikipedia">Wikipedia</option>
             </select>
-            <button type="button" class="p-elementTitle, searchWidgetSearchButton" id="searchButton" onclick="Search.autoSearch('Widget'), setHistory('Widget')">Search</button>
+            <button type="button" class="p-elementTitle, searchWidgetSearchButton" id="searchButton" onclick="Search.autoSearch('Widget'), setHistory('Widget'), location.reload();">Search</button>
           </div>
         </div>
       </div>
@@ -112,9 +109,6 @@
           <div class="p-element">
             <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allSchool/home.html">Home</a>
           </div>
-          <div class="p-element">
-            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allSchool/flashcards.html">Flashcards</a>
-          </div>
         </div>
         <div class="p-widget" style="background-color: white">
           <div class="p-widgetTitle"></div>
@@ -123,9 +117,8 @@
             <a class="p-elementTitle" id="sessionCountdown" target="_blank" href="http://www.wm.pollub.pl/files/24/attachment/10077_ZarzadzenieNrR-45-2020,-,organizacja,roku,akademickiego.pdf" style="font-size: 18px;">aaa</a>
           </div>
         </div>
-        <div class="p-widget" id="presentLesson" style="visibility: hidden; height: 0px;">
+        <div class="p-widget">
           <div class="p-widgetTitle">Present lesson</div>
-          <div class="p-widgetSubtitle" id="subject"></div>
           <div class="p-element">
             <button type="button" class="p-elementTitleButton" onclick="openSites()" style="background-color: #00000000;">Open links</button>
           </div>
@@ -134,9 +127,6 @@
           </div>
           <div class="p-element">
             <button type="button" class="p-elementTitleButton" onclick="openSecondLink()" style="background-color: #00000000;">Open Moodle</button>
-          </div>
-          <div class="p-element">
-            <button type="button" class="p-elementTitleButton" onclick="openThirdLink()" style="background-color: #00000000;">Open Frequency</button>
           </div>
         </div>
         <div class="p-widget">
@@ -153,9 +143,6 @@
           <div class="p-element">
             <a class="p-elementTitle" target="_blank" href="https://www.facebook.com/groups/480463459387051">Facebook</a>
           </div>
-          <div class="p-element">
-            <a class="p-elementTitle" target="_blank" href="http://weii.pollub.pl/files/18/attachment/3623_Informatyka,I,st,plan,studiow,ST,2019-20.pdf">Sylabus</a>
-          </div>
         </div>
       </div>
     </div>
@@ -163,26 +150,22 @@
     <div class="p-panel" id="allCollectionsPanel"></div>
 
     <div class="b-bar" id="bar">
-      <div class="m-moduleTitle">Home</div>
+      <div class="m-moduleTitle">History</div>
       <div class="b-panelsBar">
         <button type="button" class="b-panelButton" id="panelButton" onclick="panelOpener('mainPanel')">⭐️ Main panel</button>
-        <button type="button" class="b-panelButton" id="panelButton" onclick="panelOpener('allSchoolPanel')">🏫 School</button>
+        <button type="button" class="b-panelButton" id="panelButton" onclick="panelOpener('allSearchPanel')">🔎 Search</button>
       </div>
     </div>
 
-    <div class="container" id="container">
-      <script type="text/javascript">
-        // openSites();
-        setSubjects();
-      </script>
-      <div class="title">Hello!</div>
-      <button type="button" class="button" onclick="openSites()">Open links</button>
+    <div class="m-module" id="module">
+
     </div>
 
     <script src="../all/panel/panel.js"></script>
     <script src="../all/panel/mainPanel/clock.js"></script>
-    <script type="text/javascript" src="default/sessionCountdown.js"></script>
-    <script src="../allSearch/start/search.js"></script>
-    <script src="../allSearch/start/setHistory.js"></script>
+    <script src="../allSchool/default/sessionCountdown.js"></script>
+    <script src="start/search.js"></script>
+    <script src="start/setHistory.js"></script>
+    <script src="history/viewHistory.js"></script>
   </body>
 </html>
