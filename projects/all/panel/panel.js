@@ -1,6 +1,6 @@
 function panelOpener(panelName) {
   var panelVisibility = document.getElementById(panelName).style.visibility;
-  if(panelVisibility == "hidden") {
+  if(panelVisibility == "hidden" || panelVisibility == "") {
     document.getElementById('mainPanel').style.visibility = "hidden";
     document.getElementById('panelsPanel').style.visibility = "hidden";
     document.getElementById('appsPanel').style.visibility = "hidden";
