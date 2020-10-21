@@ -34,8 +34,6 @@ class Subject {
 
     if(day == this.day && hour >= this.start && hour < this.end && !this.name=='') {
       document.getElementById('subject').innerHTML = this.name;
-      document.getElementById('presentLesson').style.visibility = "visible";
-      document.getElementById('presentLesson').style.height = "auto";
     }
   }
 }
@@ -59,7 +57,7 @@ Subjects[11]= new Subject('Wprowadzenie do systemów baz danych', 3, 18, 20, '',
 Subjects[12]= new Subject('Architektura komputerów i programowanie niskopoziomowe', 5, 8, 10, '', '');
 Subjects[13]= new Subject('Podstawy elektrotechniki i elektroniki', 5, 10, 12, '', '');
 Subjects[14]= new Subject('Język angielski I ', 5, 12, 14, '', '');
-Subjects[15]= new Subject('Metrologia', 5, 18, 20, 'https://teams.microsoft.com/l/team/19%3a2deea6793f5a48199f92efcecfb86844%40thread.tacv2/conversations?groupId=4a624bd3-8f3f-4399-9c2f-2040a970b039&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8', '');
+Subjects[15]= new Subject('Metrologia', 5, 18, 20 , 'https://teams.microsoft.com/l/team/19%3a2deea6793f5a48199f92efcecfb86844%40thread.tacv2/conversations?groupId=4a624bd3-8f3f-4399-9c2f-2040a970b039&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8', '');
 
 
 function openFirstLink() {
