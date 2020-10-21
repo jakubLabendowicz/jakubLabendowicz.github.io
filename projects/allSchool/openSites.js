@@ -52,7 +52,7 @@ Subjects[7]= new Subject('Matematyka dla informatyków II', 3, 8, 10, 'https://t
 Subjects[8]= new Subject('Wychowanie fizyczne I', 3, 10, 12, 'https://teams.microsoft.com/l/team/19%3ad852e21d3f854f2ea8bebc4b7d3567dd%40thread.tacv2/conversations?groupId=80b3f6d7-9438-44dd-a279-fb91bb9ed92f&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8', '');
 Subjects[9]= new Subject('Wprowadzenie do systemów baz danych', 3, 12, 14, 'https://teams.microsoft.com/l/team/19%3a13bf774bf743454aa7b6cbdd90fbefb9%40thread.tacv2/conversations?groupId=2cf05332-9198-479a-9eeb-8dbd9f01bc36&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8', 'https://moodle3.cs.pollub.pl/course/view.php?id=182');
 Subjects[10]= new Subject('Algorytmy analizy numerycznej', 3, 16, 18, 'https://teams.microsoft.com/l/team/19%3a4883b2f83090487c8ee71a3ef2431b55%40thread.tacv2/conversations?groupId=6d99993b-4c63-4d93-a0d8-3046ad4e04af&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8', 'https://moodle3.cs.pollub.pl/course/view.php?id=331');
-Subjects[11]= new Subject('Wprowadzenie do systemów baz danych', 3, 18, 20, '', '');
+Subjects[11]= new Subject('Wprowadzenie do systemów baz danych', 3, 18, 20, 'https://teams.microsoft.com/l/channel/19%3ae0bf89588904452ba4b355912e82be31%40thread.tacv2/General?groupId=495fd440-88ca-4250-8c63-8b4e8ab300ce&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8', 'https://moodle3.cs.pollub.pl/course/view.php?id=244', 'https://moodle3.cs.pollub.pl/mod/attendance/view.php?id=1838');
 
 Subjects[12]= new Subject('Architektura komputerów i programowanie niskopoziomowe', 5, 8, 10, '', '');
 Subjects[13]= new Subject('Podstawy elektrotechniki i elektroniki', 5, 10, 12, '', '');
