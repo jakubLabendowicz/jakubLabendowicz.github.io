@@ -12,3 +12,13 @@
   /* float: left; */
   margin: 0px 25px;
 }
+
+.qr {
+  position: fixed;
+  left: 50px;
+  bottom: 50px;
+  background-image: url('qr.png');
+  width: 250px;
+  height: 250px;
+  background-size: contain;
+}
