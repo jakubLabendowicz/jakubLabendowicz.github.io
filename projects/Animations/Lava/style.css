@@ -3,6 +3,16 @@ body{
   background-color: white;
 }
 
+.logo {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  background-image: url("JŁ!.png");
+  background-size: contain;
+}
+
 .dotgroup1{
   position: fixed;
   height: 100px;
