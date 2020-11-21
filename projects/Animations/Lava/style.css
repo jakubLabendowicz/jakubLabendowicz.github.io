@@ -21,9 +21,9 @@ body{
   background-color: #D14F4F;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -30%;
+  bottom: -200px;
   opacity: .7;
-  animation: animation 10s infinite;
+  animation: animation 15s infinite;
 }
 
 .dotgroup2{
@@ -34,9 +34,9 @@ body{
   background-color: #CDD14F;
   left: 20%;
   transform: translateX(-50%);
-  bottom: -30%;
+  bottom: -300px;
   opacity: .7;
-  animation: animation 20s infinite;
+  animation: animation 30s infinite;
 }
 
 .dotgroup3{
@@ -45,41 +45,42 @@ body{
   width: 300px;
   border-radius: 200px;
   background-color: #4FD153;
-  left: 90%;
+  left: 80%;
   transform: translateX(-50%);
-  bottom: -30%;
+  bottom: -300px;
   opacity: .7;
-  animation: animation 15s infinite;
+  animation: animation 20s infinite;
 }
 
 .dot1{
 }
 
 .dot2{
-  animation-delay: 2s;
+  animation-delay: 4s;
   transform: translateX(10%);
 }
 
 .dot3{
-  animation-delay: 4s;
+  animation-delay: 8s;
+  transform: translateX(-100%);
 }
 
 .dot4{
-  animation-delay: 6s;
+  animation-delay: 12s;
   transform: translateX(-60%);
 }
 
 .dot5{
-  animation-delay: 8s;
-  transform: translateX(-100%);
+  animation-delay: 16s;
+  transform: translateX(50%);
 }
 
 @keyframes animation {
   50%{
     bottom: 75%;
     background-color: #4F7FD1;
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     border-radius: 10000px;
   }
 }
