@@ -21,7 +21,7 @@ body{
   background-color: #D14F4F;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 0%;
+  bottom: -30%;
   opacity: .7;
   animation: animation 10s infinite;
 }
@@ -34,7 +34,7 @@ body{
   background-color: #CDD14F;
   left: 20%;
   transform: translateX(-50%);
-  bottom: 0%;
+  bottom: -30%;
   opacity: .7;
   animation: animation 20s infinite;
 }
@@ -47,7 +47,7 @@ body{
   background-color: #4FD153;
   left: 90%;
   transform: translateX(-50%);
-  bottom: 0%;
+  bottom: -30%;
   opacity: .7;
   animation: animation 15s infinite;
 }
