@@ -22,10 +22,35 @@
     <div class="dotgroup3 dot4"></div>
     <div class="dotgroup3 dot5"></div>
 
-    <a href="https://jakublabendowicz.github.io/index.html"><div class="logo" id="logo"></div></a>
+    <div class="panel" id="panel">
+      <div class="paneltitle">Lava</div>
+      <div class="panelWidget">
+        <div class="panelWidgetTitle">Background color</div>
+        <div class="panelElement">
+          <button type="button" name="button" class="panelElementTitle" onclick="brithnes()">Change</button>
+        </div>
+      </div>
+      <div class="panelWidget">
+        <div class="panelWidgetTitle">Bubble quantity</div>
+        <div class="panelElement">
+          <div class="panelElementTitle">15</div>
+        </div>
+      </div>
+      <div class="panelWidget">
+        <div class="panelWidgetTitle">Bubble color</div>
+        <div class="panelElement">
+          <div class="panelElementTitle">Mix</div>
+        </div>
+      </div>
 
-    <button type="button" name="button" class="button" onclick="brithnes();"></button>
+    </div>
+
+    <div class="bar">
+      <a href="https://jakublabendowicz.github.io/index.html" class="barTitle"><div class="barTitleIcon" id="logo"></div></a>
+      <button type="button" name="button" class="barElement" onclick="panel()"><div class="barElementIcon" id="menu"></div></button>
+    </div>
 
     <script type="text/javascript" src="theme.js"></script>
+    <script type="text/javascript" src="panel.js"></script>
   </body>
 </html>
