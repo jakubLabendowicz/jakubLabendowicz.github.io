@@ -1,7 +1,7 @@
-var mode = 0;
+var backgroundMode = 0;
 
 function brithnes() {
-  if (mode == 0) {
+  if (backgroundMode == 0) {
     document.body.style.backgroundColor = "black";
     document.documentElement.style.setProperty('--panelColor', 'white');
     document.documentElement.style.setProperty('--panelBackgroundColor', 'black');
@@ -11,7 +11,7 @@ function brithnes() {
 
     document.getElementById('logo').style.backgroundImage = "url('Bubbles/JŁ!-2.png')";
     document.getElementById('menu').style.backgroundImage = "url('Bubbles/menu-1.png')";
-    mode = 1;
+    backgroundMode = 1;
   }
   else {
     document.body.style.backgroundColor = "white";
@@ -21,7 +21,7 @@ function brithnes() {
     document.documentElement.style.setProperty('--bodyBackgroundColor', 'white');
     document.getElementById('logo').style.backgroundImage = "url('Bubbles/JŁ!.png')";
     document.getElementById('menu').style.backgroundImage = "url('Bubbles/menu.png')";
-    mode = 0;
+    backgroundMode = 0;
   }
 }
 
