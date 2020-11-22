@@ -5,6 +5,11 @@
   --panelBackgroundColor: white;
   --bodyColor: black;
   --bodyBackgroundColor: white;
+
+  --bubbleTopColor: #4F7FD1;
+  --bubbleBootomColor1: #D14F4F;
+  --bubbleBootomColor2: #CDD14F;
+  --bubbleBootomColor3: #4FD153;
 }
 
 body{
@@ -36,7 +41,7 @@ body{
 }
 
 .panelWidget {
-  padding: 20px 10px;
+  padding: 20px 0px;
   margin: 20px 0px;
   /* box-shadow: 1px 1px 96px; */
   border-radius: 30px;
@@ -47,14 +52,17 @@ body{
   color: var(--panelColor);
 }
 
-.panelElement {}
+.panelElement {
+  padding: 5px 0px;
+}
 
 .panelElementTitle {
   font-size: 20px;
   background-color: #00000000;
-  border: 0px;
   padding: 0px;
   color: var(--panelColor);
+  background: none;
+  border: none;
 }
 
 .bar {
@@ -109,7 +117,7 @@ body{
   height: 100px;
   width: 100px;
   border-radius: 100px;
-  background-color: #D14F4F;
+  background-color: var(--bubbleBootomColor1);
   left: 50%;
   transform: translateX(-50%);
   bottom: -200px;
@@ -122,7 +130,7 @@ body{
   height: 200px;
   width: 200px;
   border-radius: 100px;
-  background-color: #CDD14F;
+  background-color: var(--bubbleBootomColor2);
   left: 20%;
   transform: translateX(-50%);
   bottom: -300px;
@@ -135,7 +143,7 @@ body{
   height: 300px;
   width: 300px;
   border-radius: 200px;
-  background-color: #4FD153;
+  background-color: var(--bubbleBootomColor3);
   left: 80%;
   transform: translateX(-50%);
   bottom: -300px;
@@ -169,7 +177,7 @@ body{
 @keyframes animation {
   50%{
     bottom: 75%;
-    background-color: #4F7FD1;
+    background-color: var(--bubbleTopColor);
     height: 400px;
     width: 400px;
     border-radius: 10000px;

@@ -24,3 +24,14 @@ function brithnes() {
     mode = 0;
   }
 }
+
+function bubbles() {
+  var quantity = document.getElementById('quantity').value;
+  var bubbleTopColor = document.getElementById('bubbleTopColor').value;
+  var bubbleBootomColor = document.getElementById('bubbleBootomColor').value;
+
+  document.documentElement.style.setProperty('--bubbleTopColor', bubbleTopColor);
+  document.documentElement.style.setProperty('--bubbleBootomColor1', bubbleBootomColor);
+  document.documentElement.style.setProperty('--bubbleBootomColor2', bubbleBootomColor);
+  document.documentElement.style.setProperty('--bubbleBootomColor3', bubbleBootomColor);
+}
