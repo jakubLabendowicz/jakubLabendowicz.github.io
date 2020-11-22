@@ -9,8 +9,8 @@ function brithnes() {
     document.documentElement.style.setProperty('--bodyBackgroundColor', 'black');
 
 
-    document.getElementById('logo').style.backgroundImage = "url('JŁ!-2.png')";
-    document.getElementById('menu').style.backgroundImage = "url('menu-1.png')";
+    document.getElementById('logo').style.backgroundImage = "url('Bubbles/JŁ!-2.png')";
+    document.getElementById('menu').style.backgroundImage = "url('Bubbles/menu-1.png')";
     mode = 1;
   }
   else {
@@ -19,8 +19,8 @@ function brithnes() {
     document.documentElement.style.setProperty('--panelBackgroundColor', 'white');
     document.documentElement.style.setProperty('--bodyColor', 'black');
     document.documentElement.style.setProperty('--bodyBackgroundColor', 'white');
-    document.getElementById('logo').style.backgroundImage = "url('JŁ!.png')";
-    document.getElementById('menu').style.backgroundImage = "url('menu.png')";
+    document.getElementById('logo').style.backgroundImage = "url('Bubbles/JŁ!.png')";
+    document.getElementById('menu').style.backgroundImage = "url('Bubbles/menu.png')";
     mode = 0;
   }
 }
