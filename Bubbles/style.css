@@ -24,11 +24,11 @@ body{
   top: 0px;
   left: 0px;
   bottom: 0px;
-  width: 300px;
-  padding: 50px 25px 0px 150px;
+  width: 250px;
+  padding: 50px 50px 0px 150px;
   background-color: var(--panelBackgroundColor);
   color: var(--panelColor);
-  border-radius: 0px 60px 60px 0px;
+  border-radius: 0px 30px 30px 0px;
   box-shadow: 12px 12px 96px rgba(0, 0, 0, 0.16);
 }
 
@@ -37,7 +37,7 @@ body{
 }
 
 .paneltitle {
-  font-size: 60px;
+  font-size: 40px;
   color: var(--panelColor);
 }
 
@@ -49,7 +49,7 @@ body{
 }
 
 .panelWidgetTitle {
-  font-size: 30px;
+  font-size: 25px;
   color: var(--panelColor);
 }
 
@@ -58,7 +58,7 @@ body{
 }
 
 .panelElementTitle {
-  font-size: 20px;
+  font-size: 15px;
   background-color: #00000000;
   padding: 0px;
   color: var(--panelColor);
@@ -73,25 +73,26 @@ body{
 
 .bar {
   position: fixed;
-  top: 25px;
-  left: 25px;
-  bottom: 25px;
-  width: 100px;
-  border-radius: 60px 60px 60px 0px;
-  /* background-color: #4F7FD1;
-  box-shadow: 12px 12px 96px; */
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  width: 80px;
+  border-radius: 30px;
+  /* background-color: #7D8FE9;
+  box-shadow: 12px 12px 96px rgba(0, 0, 0, 0.16); */
 }
 
 .barTitle {
   position: fixed;
   top: 50px;
-  left: 25px;
+  left: 20px;
   padding: 0px 10px;
+  visibility: hidden;
 }
 
 .barTitleIcon {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   background-size: contain;
 }
 
@@ -101,21 +102,22 @@ body{
 
 .barElement {
   position: fixed;
-  bottom: 50px;;
-  left: 25px;
+  left: 20px;
   border: 0px;
   background-color: #00000000;
   padding: 0px;
 }
 
 .barElementIcon {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background-size: contain;
 }
 
 #menu {
   background-image: url("menu.png");
+  position: fixed;
+  bottom: 20px;
 }
 
 .dotgroup1{
