@@ -28,7 +28,7 @@ body{
   background-color: var(--panelBackgroundColor);
   color: var(--panelColor);
   border-radius: 0px 60px 60px 0px;
-  box-shadow: 12px 12px 96px black;
+  box-shadow: 12px 12px 96px rgba(0, 0, 0, 0.16);
 }
 
 #panel {
