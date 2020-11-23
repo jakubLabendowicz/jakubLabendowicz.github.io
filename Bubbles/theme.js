@@ -1,6 +1,6 @@
 var backgroundMode = 0;
 
-function brithnes() {
+function theme() {
   if (backgroundMode == 0) {
     document.body.style.backgroundColor = "black";
     document.documentElement.style.setProperty('--panelColor', 'white');
