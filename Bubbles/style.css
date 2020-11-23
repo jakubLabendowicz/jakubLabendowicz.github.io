@@ -16,6 +16,7 @@ body{
   margin; 0px;
   background-color: var(--bodyBackgroundColor);
   font-family: 'Poppins', sans-serif;
+  color: var(--bodyColor);
 }
 
 .panel {
@@ -63,6 +64,11 @@ body{
   color: var(--panelColor);
   background: none;
   border: none;
+}
+
+.panelElementTitle option {
+  background-color: var(--panelBackgroundColor);
+  color: var(--panelColor);
 }
 
 .bar {
@@ -182,4 +188,81 @@ body{
     width: 400px;
     border-radius: 10000px;
   }
+}
+
+.box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.clock {
+  font-size: 100px;
+}
+
+.date {
+  font-size: 30px;
+}
+
+.searchBar {
+  float: left;
+  width: 600px;
+  margin: 0px;
+  background-color: #00000000;
+  padding-left: 10px;
+  margin-top: 50px;
+}
+
+.searchText {
+  float: left;
+  height: 65px;
+  width: 440px;
+  font-size: 24px;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  background-color: #00000000;
+  color: var(--bodyColor);
+}
+
+.searchText:focus {
+  outline: none;
+}
+
+.searchSelector {
+  font-family: 'Raleway', sans-serif;
+  height: 65px;
+  width: 150px;
+  font-size: 24px;
+  border: 0px;
+  background-color: #00000000;
+  color: var(--bodyColor);
+}
+
+.searchSelector:focus {
+  outline: none;
+}
+
+.searchSelector option {
+  background-color: var(--bodyBackgroundColor);
+  color: var(--bodyColor);
+}
+
+.searchButton {
+  height: 65px;
+  width: 90px;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  font-size: 24px;
+  background-color: #00000000;
+  color: var(--bodyColor);
+  float: left;
+  margin-top: 50px;
+}
+
+.searchButton:hover {
+  /* background-color: white; */
 }

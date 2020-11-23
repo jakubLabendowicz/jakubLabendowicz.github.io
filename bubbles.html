@@ -2,11 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Bubbles</title>
+    <title>Bubbles | New card</title>
     <link rel="stylesheet" href="Bubbles/style.css">
     <link rel="icon" href="Bubbles/icon.png">
   </head>
-  <body id="container">
+  <body id="container" onload="clock()">
     <div class="dotgroup1 dot1"></div>
     <div class="dotgroup1 dot2"></div>
     <div class="dotgroup1 dot3"></div>
@@ -74,7 +74,25 @@
       <button type="button" name="button" class="barElement" onclick="panel()"><div class="barElementIcon" id="menu"></div></button>
     </div>
 
+    <div class="box">
+      <div class="clock" id="clock">time</div>
+      <div class="date" id="date"></div>
+      <div class="searchBar">
+        <input type="text" class="searchText" id="textBar" placeholder="Write here">
+        <select class="searchSelector" id="searchSelector">
+          <option value="Google">Google</option>
+          <option value="Youtube">Youtube</option>
+          <option value="Netflix">Netflix</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Wikipedia">Wikipedia</option>
+        </select>
+      </div>
+      <button type="button" class="searchButton" id="searchButton" onclick="Search.autoSearch(''), setHistory('')">Search</button>
+    </div>
+
     <script type="text/javascript" src="Bubbles/theme.js"></script>
     <script type="text/javascript" src="Bubbles/panel.js"></script>
+    <script type="text/javascript" src="Bubbles/clock.js"></script>
+    <script type="text/javascript" src="Bubbles/search.js"></script>
   </body>
 </html>
