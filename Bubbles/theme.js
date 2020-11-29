@@ -45,3 +45,11 @@ function bubbles() {
   document.documentElement.style.setProperty('--bubbleBootomColor2', bubbleBootomColor2);
   document.documentElement.style.setProperty('--bubbleBootomColor3', bubbleBootomColor3);
 }
+
+function setTheme() {
+  const date = new Date();
+  var hour = date.getHours();
+  if (hour>22 || hour<6) {
+    theme();
+  }
+}
