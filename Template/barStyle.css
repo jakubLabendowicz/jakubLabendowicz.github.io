@@ -1,0 +1,16 @@
+:root {
+  --barColor: black;
+  --barBackgroundColor: white;
+}
+
+.bar {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  width: 4%;
+  min-width: 15px;
+  border-radius: 30px;
+  background-color: #7D8FE9;
+  box-shadow: 12px 12px 96px rgba(0, 0, 0, 0.16);
+}

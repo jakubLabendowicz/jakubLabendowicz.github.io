@@ -1,0 +1,18 @@
+:root {
+  --panelColor: black;
+  --panelBackgroundColor: white;
+}
+
+.panel {
+  color: var(--panelColor);
+  background-color: var(--panelBackgroundColor);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 25%;
+  min-width: 320px;
+  padding: 50px 50px 0px 150px;
+  border-radius: 0px 30px 30px 0px;
+  box-shadow: 12px 12px 96px rgba(0, 0, 0, 0.16);
+}
