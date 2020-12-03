@@ -16,10 +16,11 @@ class Card {
     document.getElementById(cardId).style.visibility = 'visible';
     Card.previousCardId = cardId;
   }
+  static close() {
+    document.getElementById(Card.previousCardId).style.visibility = 'hidden';
+  }
 }
 
 mainCard = new Card('mainCard');
 settingsCard = new Card('settingsCard');
 appsCard = new Card('appsCard');
-
-mainCard.open();
