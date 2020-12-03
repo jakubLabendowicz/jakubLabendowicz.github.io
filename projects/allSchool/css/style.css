@@ -21,29 +21,25 @@ body {
   box-shadow: 12px 12px 96px rgba(0, 0, 0, 0.16);
   background-color: var(--bodyBackgroundColor);
   /* background-color: #4caf50; */
-  border-style: solid;
+  /* border-style: solid;
   border-color: #33691e;
-  border-width: 5px;
+  border-width: 5px; */
   font-size: 60px;
-  padding: 30px;
   /* height: 450px; */
   /* width: 450px; */
 }
 
+.box:hover {
+  background-color: #33691e;
+  color: black;
+}
+
 .button {
   font-size: 50px;
+  height: 100%;
+  padding: 50px;
   /* padding: 15px 60px; */
   background-color: #00000000;
   border-style: none;
   color: var(--bodyColor);
-}
-
-.button:focus {
-  outline-style: none;
-  background-color: white;
-}
-
-.button:hover {
-  background-color: #1B5E20;
-  color: black;
 }

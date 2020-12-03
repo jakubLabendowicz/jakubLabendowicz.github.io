@@ -7,6 +7,10 @@
   --barBackgroundColor: white;
 }
 
+button:focus {
+  outline-style: none;
+}
+
 .panel {
   font-family: 'Poppins', sans-serif;
   visibility: hidden;

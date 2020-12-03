@@ -12,3 +12,7 @@ body{
   color: var(--bodyColor);
   font-family: 'Poppins', sans-serif;
 }
+
+button:focus {
+  outline-style: none;
+}
