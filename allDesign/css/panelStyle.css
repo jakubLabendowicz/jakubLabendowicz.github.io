@@ -2,7 +2,7 @@
   --panelColor: black;
   --panelBackgroundColor: white;
   --barColor: black;
-  --barBackgroundColor: #4caf50;
+  --barBackgroundColor: #01579b;
 }
 
 .panel {
@@ -60,7 +60,7 @@
 .panel .p-card {
   margin-left: 100px;
   width: 200px;
-  padding: 25px;
+  padding: 50px;
 }
 .panel .p-card .p-cardBox {
   padding: 20px 0px;
