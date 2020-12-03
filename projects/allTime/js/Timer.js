@@ -15,7 +15,7 @@ Gear = new Array();
 Gear[0] = new Timer();
 
 class Gear {
-  constructor() {
-
+  constructor(name) {
+    this.name = name;
   }
 }
