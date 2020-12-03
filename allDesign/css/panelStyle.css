@@ -20,7 +20,7 @@
   color: var(--panelColor);
 }
 .panel .p-header {
-  width: 350px;
+  width: 400px;
   padding: 25px;
 }
 .panel .p-header .p-title {
@@ -63,7 +63,7 @@
 }
 .panel .p-card {
   margin-left: 100px;
-  width: 200px;
+  width: 250px;
   padding: 50px;
 }
 .panel .p-card .p-cardBox {
