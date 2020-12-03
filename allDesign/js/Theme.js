@@ -45,7 +45,7 @@ class Theme {
     const date = new Date();
     var hour = date.getHours();
 
-    if (hour>=6 || hour<22) {
+    if (hour>=6 && hour<22) {
       Themes[0].run(dec);
     }
     else if (hour>=22 || hour<6) {
