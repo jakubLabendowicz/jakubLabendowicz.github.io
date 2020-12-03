@@ -119,7 +119,7 @@ button:focus {
   background-size: contain;
 }
 
-#SettingsIcon {
+#settingsIcon {
   background-image: url('../icons/settings.png');
   background-size: contain;
 }
