@@ -80,6 +80,12 @@
 }
 .panel .p-card .p-cardBox .p-cardBoxElement .p-cardBoxElementHeader .p-cardBoxElementTitle {
   font-size: 15px;
+  background: none;
+  border: none;
+}
+.panel .p-card .p-cardBox .p-cardBoxElement .p-cardBoxElementHeader .p-cardBoxElementTitle option{
+  background-color: var(--panelBackgroundColor);
+  color: var(--panelColor);
 }
 .panel .p-card .p-cardBox .p-cardBoxElement .p-cardBoxElementHeader .p-cardBoxElementSubitle {
   font-size: 10px;
