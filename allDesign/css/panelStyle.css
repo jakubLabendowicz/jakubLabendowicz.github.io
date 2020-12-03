@@ -37,7 +37,7 @@
   left: 0px;
   bottom: 0px;
   border-radius: 0px 30px 0px 0px;
-  box-shadow: 12px 12px 96px rgba(0, 0, 0, 0.16);
+  /* box-shadow: 12px 12px 96px rgba(0, 0, 0, 0.16); */
   width: 50px;
   padding: 25px;
   background-color: var(--barBackgroundColor);
@@ -52,6 +52,7 @@
   background-color: white;
   font-size: 13px;
   text-align: center;
+  background-color: #efefef;
 }
 .panel .p-bar .p-barBox .p-barBoxElement .p-barBoxElementIcon {
   border: none;
