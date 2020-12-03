@@ -3,186 +3,125 @@
   <head>
     <meta charset="utf-8">
     <title>All school</title>
-    <link rel="icon" href="default/allSchoolIcon.png">
+    <link rel="icon" href="icons/allSchoolIcon.png">
+    <link rel="stylesheet" href="https://jakublabendowicz.github.io/allDesign/css/panelStyle.css">
+    <link rel="stylesheet" href="https://jakublabendowicz.github.io/allDesign/css/bodyStyle.css">
 
-    <link rel="stylesheet" href="../all/bar/bar.css">
-    <link rel="stylesheet" href="../all/module/module.css">
-    <link rel="stylesheet" href="../all/panel/panel.css">
-    <link rel="stylesheet" href="../all/panel/panelsColors.css">
+    <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="default/default.css">
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet" href="../allSearch/widget/widget.css">
-
-    <script type="text/javascript" src="openSites.js"></script>
+    <script type="text/javascript" src="js/openSites.js"></script>
   </head>
-  <body id="body" onload="sessionCountdown(), clock()">
-    <div class="p-panel" id="mainPanel">
-      <div class="p-panelTitle" id="clock">Main</div>
-      <div class="p-panelSubtitle" id="date">panel</div>
-      <div class="p-category">
-        <div class="p-widget">
-          <div class="p-widgetTitle">Favorite apps</div>
-          <div class="p-element">
-            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allsearch/home.html">All search</a>
-          </div>
-          <div class="p-element">
-            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allSchool/home.html">All school</a>
-          </div>
+  <body onload="sessionCountdown(), Theme.auto()">
+    <script type="text/javascript">
+      // openSites();
+      setSubjects();
+    </script>
+    <div class="box">
+      <button class="button" onclick="openSites()">Open links</button>
+    </div>
+
+    <div class="panel" id="panel">
+      <div class="p-header">
+        <div class="p-title">School</div>
+      </div>
+      <div class="p-bar">
+        <div class="p-barBox" id="bar">
+          <button class="p-barBoxElement" onclick="Theme.change(7)" id="themeStatus">Change</button>
         </div>
-        <div class="p-widget">
-          <div class="p-widgetTitle">Favorite panels</div>
-          <!-- <div class="p-element">
-            <button type="button" class="p-elementTitleButton" id="panelButton" onclick="panelOpener('appsPanel')" style="background-color: #b71c1c;">Apps panel</button>
+      </div>
+      <div class="p-card" id="mainCard">
+        <div class="p-cardBox">
+          <!-- <div class="p-cardBoxHeader">
+            <div class="p-cardBoxIcon"></div>
+            <div class="p-cardBoxTitle">Remember</div>
           </div> -->
-          <div class="p-element">
-            <button type="button" class="p-elementTitleButton" id="panelButton" onclick="panelOpener('allSchoolPanel')" style="background-color: #b71c1c00;">School panel</button>
-          </div>
-          <div class="p-element">
-            <button type="button" class="p-elementTitleButton" id="panelButton" onclick="panelOpener('allSearchPanel')" style="background-color: #b71c1c00;">Search panel</button>
-          </div>
-        </div>
-        <div class="p-widget">
-        </div>
-      </div>
-    </div>
-
-    <div class="p-panel" id="panelsPanel">
-    </div>
-
-    <div class="p-panel" id="appsPanel">
-      <div class="p-panelTitle">Apps</div>
-      <div class="p-category">
-        <div class="p-widget">
-          <div class="p-widgetTitle">Favorite apps</div>
-          <div class="p-element">
-            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allsearch/home.html">All search</a>
-          </div>
-          <div class="p-element">
-            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allSchool/home.html">All school</a>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <div class="p-cardBoxElementIcon"></div>
+              <div class="p-cardBoxElementTitle" id="sessionCountdown">63 days to the exams</div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="p-panel" id="allSearchPanel">
-      <div class="p-panelTitle">All search</div>
-      <div class="p-category">
-        <div class="p-widget">
-          <div class="p-widgetTitle">Modules</div>
-          <div class="p-element">
-            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allsearch/home.html">Home</a>
+        <div class="p-cardBox">
+          <div class="p-cardBoxHeader">
+            <div class="p-cardBoxIcon"></div>
+            <div class="p-cardBoxTitle">Shorts</div>
           </div>
-          <!-- <div class="p-element">
-            <a class="p-elementTitle" href="bookmarks.html">Bookmarks</a>
-          </div> -->
-          <div class="p-element">
-            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allsearch/history.html">History</a>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <div class="p-cardBoxElementIcon"></div>
+              <a class="p-cardBoxElementTitle" target="_blank" href="https://moodle3.cs.pollub.pl/my/">Moodle</a>
+            </div>
           </div>
-          <!-- <div class="p-element">
-            <a class="p-elementTitle" href="settings.html">Settings</a>
-          </div> -->
-        </div>
-        <div class="p-widget" style="background-color: white">
-          <div class="p-widgetTitle"></div>
-          <div class="p-widgetSubtitle">Search</div>
-          <div class="p-element">
-            <input type="text" class="p-elementTitle, searchWidgetTextBar" id="textBarWidget" placeholder="Write here">
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <div class="p-cardBoxElementIcon"></div>
+              <a class="p-cardBoxElementTitle" target="_blank" href="http://weii.pollub.pl/files/18/attachment/3859_Informatyka,IIST,II,rok,3,semestr1.pdf">Schedule</a>
+            </div>
           </div>
-          <div class="p-element">
-            <select class="p-elementTitle, searchWidgetSearchSelector" id="searchSelectorWidget">
-              <option value="Google">Google</option>
-              <option value="Youtube">Youtube</option>
-              <option value="Netflix">Netflix</option>
-              <option value="Facebook">Facebook</option>
-              <option value="Wikipedia">Wikipedia</option>
-            </select>
-            <button type="button" class="p-elementTitle, searchWidgetSearchButton" id="searchButton" onclick="Search.autoSearch('Widget'), setHistory('Widget')">Search</button>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <div class="p-cardBoxElementIcon"></div>
+              <a class="p-cardBoxElementTitle" target="_blank" href="https://ehms.pollub.pl/standard/">EHMS</a>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="p-panel" id="allSchoolPanel">
-      <div class="p-panelTitle">School</div>
-      <div class="p-category">
-        <div class="p-widget">
-          <div class="p-widgetTitle">Modules</div>
-          <div class="p-element">
-            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allSchool/home.html">Home</a>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <div class="p-cardBoxElementIcon"></div>
+              <a class="p-cardBoxElementTitle" target="_blank" href="http://weii.pollub.pl/files/18/attachment/3623_Informatyka,I,st,plan,studiow,ST,2019-20.pdf">Sylabus</a>
+            </div>
           </div>
-          <div class="p-element">
-            <a class="p-elementTitle" href="https://jakublabendowicz.github.io/projects/allSchool/flashcards.html">Flashcards</a>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <div class="p-cardBoxElementIcon"></div>
+              <a class="p-cardBoxElementTitle" target="_blank" href="http://www.wm.pollub.pl/files/24/attachment/10077_ZarzadzenieNrR-45-2020,-,organizacja,roku,akademickiego.pdf">Academic year</a>
+            </div>
+          </div>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <div class="p-cardBoxElementIcon"></div>
+              <a class="p-cardBoxElementTitle" target="_blank" href="https://www.facebook.com/groups/480463459387051">Facebook</a>
+            </div>
           </div>
         </div>
-        <div class="p-widget" style="background-color: white">
-          <div class="p-widgetTitle"></div>
-          <div class="p-widgetSubtitle">Remember</div>
-          <div class="p-element" style="text-align: center;">
-            <a class="p-elementTitle" id="sessionCountdown" target="_blank" href="http://www.wm.pollub.pl/files/24/attachment/10077_ZarzadzenieNrR-45-2020,-,organizacja,roku,akademickiego.pdf" style="font-size: 18px;">aaa</a>
+        <div class="p-cardBox">
+          <div class="p-cardBoxHeader">
+            <div class="p-cardBoxIcon"></div>
+            <div class="p-cardBoxTitle" id="subject">Present subject</div>
           </div>
-        </div>
-        <div class="p-widget" id="presentLesson">
-          <div class="p-widgetTitle">Present lesson</div>
-          <div class="p-widgetSubtitle" id="subject"></div>
-          <div class="p-element">
-            <button type="button" class="p-elementTitleButton" onclick="openSites()" style="background-color: #00000000;">Open links</button>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <div class="p-cardBoxElementIcon"></div>
+              <button class="p-cardBoxElementTitle" onclick="openSites()">Open links</button>
+            </div>
           </div>
-          <div class="p-element">
-            <button type="button" class="p-elementTitleButton" onclick="openFirstLink()" style="background-color: #00000000;">Open Teams</button>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <div class="p-cardBoxElementIcon"></div>
+              <button class="p-cardBoxElementTitle" onclick="openFirstLink()">Teams</button>
+            </div>
           </div>
-          <div class="p-element">
-            <button type="button" class="p-elementTitleButton" onclick="openSecondLink()" style="background-color: #00000000;">Open Moodle</button>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <div class="p-cardBoxElementIcon"></div>
+              <button class="p-cardBoxElementTitle" onclick="openSecondLink()">Moodle</button>
+            </div>
           </div>
-          <div class="p-element">
-            <button type="button" class="p-elementTitleButton" onclick="openThirdLink()" style="background-color: #00000000;">Open Frequency</button>
-          </div>
-        </div>
-        <div class="p-widget">
-          <div class="p-widgetTitle">Shorts</div>
-          <div class="p-element">
-            <a class="p-elementTitle" target="_blank" href="https://moodle3.cs.pollub.pl/my/">Moodle</a>
-          </div>
-          <div class="p-element">
-            <a class="p-elementTitle" target="_blank" href="http://weii.pollub.pl/files/18/attachment/3859_Informatyka,I,stopien,-,3,semestr1.pdf">Schedule</a>
-          </div>
-          <div class="p-element">
-            <a class="p-elementTitle" target="_blank" href="https://ehms.pollub.pl/standard/">EHMS</a>
-          </div>
-          <div class="p-element">
-            <a class="p-elementTitle" target="_blank" href="https://www.facebook.com/groups/480463459387051">Facebook</a>
-          </div>
-          <div class="p-element">
-            <a class="p-elementTitle" target="_blank" href="http://weii.pollub.pl/files/18/attachment/3623_Informatyka,I,st,plan,studiow,ST,2019-20.pdf">Sylabus</a>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <div class="p-cardBoxElementIcon"></div>
+              <button class="p-cardBoxElementTitle" onclick="openThirdLink()">Frequency</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="p-panel" id="allCollectionsPanel"></div>
+    <button class="panelButton" onclick="openPanel()"></button>
 
-    <div class="b-bar" id="bar">
-      <div class="m-moduleTitle">Home</div>
-      <div class="b-panelsBar">
-        <button type="button" class="b-panelButton" id="panelButton" onclick="panelOpener('mainPanel')">⭐️ Main panel</button>
-        <button type="button" class="b-panelButton" id="panelButton" onclick="panelOpener('allSchoolPanel')">🏫 School</button>
-      </div>
-    </div>
-
-    <div class="container" id="container">
-      <script type="text/javascript">
-        // openSites();
-        setSubjects();
-      </script>
-      <div class="title">Hello!</div>
-      <button type="button" class="button" onclick="openSites()">Open links</button>
-    </div>
-
-    <script src="../all/panel/panel.js"></script>
-    <script src="../all/panel/mainPanel/clock.js"></script>
-    <script type="text/javascript" src="default/sessionCountdown.js"></script>
-    <script src="../allSearch/start/search.js"></script>
-    <script src="../allSearch/start/setHistory.js"></script>
+    <script type="text/javascript" src="js/sessionCountdown.js"></script>
+    <script src="https://jakublabendowicz.github.io/allDesign/js/Theme.js"></script>
+    <script src="https://jakublabendowicz.github.io/allDesign/js/Card.js"></script>
+    <script src="https://jakublabendowicz.github.io/allDesign/js/Panel.js"></script>
   </body>
 </html>
