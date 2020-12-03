@@ -110,6 +110,21 @@ button:focus {
   border-radius: 10px;
 }
 
+#menuIcon {
+  background-image: url('../icons/menu.png');
+  background-size: contain;
+}
+
+#mainIcon {
+  background-image: url('../icons/main.png');
+  background-size: contain;
+}
+
+#SettingsIcon {
+  background-image: url('../icons/settings.png');
+  background-size: contain;
+}
+
 
 
 @keyframes openPanel {
