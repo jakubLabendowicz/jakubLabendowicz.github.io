@@ -36,20 +36,20 @@ class Theme {
     }
   }
 
-  static change() {
-    if (Theme.presentTheme == Themes.length-1) Themes[0].run();
-    else Themes[Theme.presentTheme+1].run();
+  static change(dec=6) {
+    if (Theme.presentTheme == Themes.length-1) Themes[0].run(dec);
+    else Themes[Theme.presentTheme+1].run(dec);
   }
 
-  static auto() {
+  static auto(dec=6) {
     const date = new Date();
     var hour = date.getHours();
 
     if (hour>=6 || hour<22) {
-      Themes[0].run();
+      Themes[0].run(dec);
     }
     else if (hour>=22 || hour<6) {
-      Themes[1].run();
+      Themes[1].run(dec);
     }
   }
 }
