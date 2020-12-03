@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Bubbles | New card</title>
-    <link rel="stylesheet" href="Bubbles/style.css">
     <link rel="icon" href="Bubbles/icon.png">
+    <link rel="stylesheet" href="https://jakublabendowicz.github.io/allDesign/css/panelStyle.css">
+    <!-- <link rel="stylesheet" href="https://jakublabendowicz.github.io/allDesign/css/bodyStyle.css"> -->
+    <link rel="stylesheet" href="Bubbles/style.css">
   </head>
-  <body id="container" onload="clock(), setTheme()">
+  <body id="container" onload="clock(), Theme.auto(7)">
     <div class="dotgroup1 dot1"></div>
     <div class="dotgroup1 dot2"></div>
     <div class="dotgroup1 dot3"></div>
@@ -22,71 +24,6 @@
     <div class="dotgroup3 dot3"></div>
     <div class="dotgroup3 dot4"></div>
     <div class="dotgroup3 dot5"></div>
-
-    <div class="panel" id="panel">
-      <div class="paneltitle">Bubbles</div>
-      <div class="panelCard" id="settingsCart">
-        <div class="panelWidget">
-          <div class="panelWidgetTitle">Background color</div>
-          <div class="panelElement">
-            <button type="button" name="button" class="panelElementTitle" onclick="theme()">Change</button>
-          </div>
-        </div>
-        <div class="panelWidget">
-          <div class="panelWidgetTitle">Bubble quantity</div>
-          <div class="panelElement">
-            <input type="number" id="quantity" value="15" class="panelElementTitle">
-          </div>
-        </div>
-        <div class="panelWidget">
-          <div class="panelWidgetTitle">Bubble colors</div>
-          <div class="panelElement">
-            <select class="panelElementTitle" id="bubbleTopColor">
-              <!-- <option value="mix">Mix</option> -->
-              <option value="#4F7FD1">Blue</option>
-              <option value="#4FD153">Green</option>
-              <option value="#CDD14F">Yellow</option>
-              <option value="#D14F4F">Red</option>
-              <option value="white">White</option>
-              <option value="black">Black</option>
-            </select>
-          </div>
-          <div class="panelElement">
-            <select class="panelElementTitle" id="bubbleBootomColor">
-              <option value="mix" class="panelElementTitle">Mix</option>
-              <option value="#4F7FD1">Blue</option>
-              <option value="#4FD153">Green</option>
-              <option value="#CDD14F">Yellow</option>
-              <option value="#D14F4F">Red</option>
-              <option value="white">White</option>
-              <option value="black">Black</option>
-            </select>
-          </div>
-        </div>
-        <div class="panelWidget">
-          <div class="panelWidgetTitle"></div>
-          <div class="panelElement"><button class="panelElementTitle" style="text-align: left; font-size: 30px;" onclick="bubbles()">Set</button></div>
-        </div>
-      </div>
-      <div class="panelCard" id="appsCard">
-        <div class="panelWidget">
-        </div>
-        <div class="panelWidget">
-          <div class="panelWidgetTitle">Apps</div>
-          <div class="panelElement">
-            <a href="https://jakublabendowicz.github.io/projects/allSchool/home.html" class="panelElementTitle">all! School</a>
-          </div>
-          <div class="panelElement">
-            <a href="https://jakublabendowicz.github.io/projects/allsearch/home.html" class="panelElementTitle">all! Search</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bar">
-      <a href="https://jakublabendowicz.github.io/index.html" class="barTitle"><div class="barTitleIcon" id="logo"></div></a>
-      <button type="button" name="button" class="barElement" onclick="panel()"><div class="barElementIcon" id="menu"></div></button>
-    </div>
 
     <div class="box">
       <div class="clock" id="clock">time</div>
@@ -108,11 +45,95 @@
 
     <button class="lessonOpener" onclick="openSites()">Now lesson</button>
 
-    <script type="text/javascript" src="Bubbles/theme.js"></script>
-    <script type="text/javascript" src="Bubbles/panel.js"></script>
+    <div class="panel" id="panel">
+      <div class="p-header">
+        <div class="p-title">Bubbles</div>
+      </div>
+      <div class="p-bar">
+        <div class="p-barBox" id="bar">
+          <!-- <div class="p-barBoxElement"><button class="p-barBoxElementIcon" style="background-image: url('home.png')"></button></div> -->
+          <button class="p-barBoxElement" onclick="Theme.change(7)" id="themeStatus">Change</button>
+        </div>
+      </div>
+      <div class="p-card" id="settingsCart">
+        <div class="p-cardBox">
+          <div class="p-cardBoxHeader">
+            <div class="p-cardBoxTitle">Bubble quantity</div>
+          </div>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <input type="number" id="quantity" value="15" class="p-cardBoxElementTitle">
+            </div>
+          </div>
+        </div>
+        <div class="p-cardBox">
+          <div class="p-cardBoxHeader">
+            <div class="p-cardBoxTitle">Bubble colors</div>
+          </div>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <select class="p-cardBoxElementTitle" id="bubbleTopColor">
+                <!-- <option value="mix">Mix</option> -->
+                <option value="#4F7FD1">Blue</option>
+                <option value="#4FD153">Green</option>
+                <option value="#CDD14F">Yellow</option>
+                <option value="#D14F4F">Red</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
+              </select>
+            </div>
+          </div>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <select class="p-cardBoxElementTitle" id="bubbleBootomColor">
+                <option value="mix">Mix</option>
+                <option value="#4F7FD1">Blue</option>
+                <option value="#4FD153">Green</option>
+                <option value="#CDD14F">Yellow</option>
+                <option value="#D14F4F">Red</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="p-cardBox">
+          <div class="p-cardBoxHeader">
+            <div class="p-cardBoxTitle"></div>
+          </div>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <button class="p-cardBoxElementTitle" style="text-align: left; font-size: 30px;" onclick="bubbles()">Set</button>
+            </div>
+          </div>
+        </div>
+        <div class="p-cardBox">
+          <div class="p-cardBoxHeader">
+            <div class="p-cardBoxTitle">Apps</div>
+          </div>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <a href="https://jakublabendowicz.github.io/projects/allSchool/home.html" class="p-cardBoxElementTitle">all! School</a>
+            </div>
+          </div>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <a href="https://jakublabendowicz.github.io/projects/allsearch/home.html" class="p-cardBoxElementTitle">all! Search</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="panelButton" onclick="openPanel()"></button>
+
+    <script type="text/javascript" src="Bubbles/Bubbles.js"></script>
     <script type="text/javascript" src="Bubbles/clock.js"></script>
     <script type="text/javascript" src="Bubbles/search.js"></script>
     <script type="text/javascript" src="Bubbles/setHistory.js"></script>
     <script type="text/javascript" src="projects/allSchool/openSites.js"></script>
+
+    <script src="https://jakublabendowicz.github.io/allDesign/js/Theme.js"></script>
+    <script src="https://jakublabendowicz.github.io/allDesign/js/Panel.js"></script>
   </body>
 </html>

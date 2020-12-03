@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
-  --panelColor: black;
-  --panelBackgroundColor: white;
-  --bodyColor: black;
-  --bodyBackgroundColor: white;
-
   --bubbleTopColor: #4F7FD1;
   --bubbleBootomColor1: #D14F4F;
   --bubbleBootomColor2: #CDD14F;
@@ -19,7 +14,11 @@ body{
   color: var(--bodyColor);
 }
 
-.panel {
+/* .panel .p-bar {
+  background-image: linear-gradient(45deg, #4fd153, #4f7fd1);
+} */
+
+/* .panel {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -44,7 +43,7 @@ body{
 .panelWidget {
   padding: 20px 0px;
   margin: 20px 0px;
-  /* box-shadow: 1px 1px 96px; */
+  box-shadow: 1px 1px 96px;
   border-radius: 30px;
 }
 
@@ -78,8 +77,8 @@ body{
   bottom: 20px;
   width: 80px;
   border-radius: 30px;
-  /* background-color: #7D8FE9;
-  box-shadow: 12px 12px 96px rgba(0, 0, 0, 0.16); */
+  background-color: #7D8FE9;
+  box-shadow: 12px 12px 96px rgba(0, 0, 0, 0.16);
 }
 
 .barTitle {
@@ -118,7 +117,7 @@ body{
   background-image: url("menu.png");
   position: fixed;
   bottom: 20px;
-}
+} */
 
 .dotgroup1{
   position: fixed;
