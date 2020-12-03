@@ -62,7 +62,7 @@
   background-size: contain;
 }
 .panel .p-card {
-  visibility: hidden;
+  display: none;
   margin-left: 100px;
   width: 200px;
   padding: 50px;

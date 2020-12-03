@@ -6,18 +6,18 @@ class Card {
   }
 
   open() {
-    if (!Card.previousCardId=='') document.getElementById(Card.previousCardId).style.visibility = 'hidden';
-    document.getElementById(this.cardId).style.visibility = 'visible';
+    if (!Card.previousCardId=='') document.getElementById(Card.previousCardId).style.display = 'none';
+    document.getElementById(this.cardId).style.display = 'block';
     Card.previousCardId = this.cardId;
   }
 
   static open(cardId) {
-    if (!Card.previousCardId=='') document.getElementById(Card.previousCardId).style.visibility = 'hidden';
-    document.getElementById(cardId).style.visibility = 'visible';
+    if (!Card.previousCardId=='') document.getElementById(Card.previousCardId).style.display = 'none';
+    document.getElementById(cardId).style.display = 'block';
     Card.previousCardId = cardId;
   }
   static close() {
-    document.getElementById(Card.previousCardId).style.visibility = 'hidden';
+    document.getElementById(Card.previousCardId).style.display = 'none';
   }
 }
 
