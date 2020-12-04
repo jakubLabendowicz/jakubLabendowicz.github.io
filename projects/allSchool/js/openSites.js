@@ -54,9 +54,9 @@ Subjects[9]= new Subject('Wprowadzenie do systemów baz danych', 3, 12, 14, 'htt
 Subjects[10]= new Subject('Algorytmy analizy numerycznej', 3, 16, 18, 'https://teams.microsoft.com/l/team/19%3a4883b2f83090487c8ee71a3ef2431b55%40thread.tacv2/conversations?groupId=6d99993b-4c63-4d93-a0d8-3046ad4e04af&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8', 'https://moodle3.cs.pollub.pl/course/view.php?id=331');
 Subjects[11]= new Subject('Wprowadzenie do systemów baz danych', 3, 18, 20, 'https://teams.microsoft.com/l/channel/19%3ae0bf89588904452ba4b355912e82be31%40thread.tacv2/General?groupId=495fd440-88ca-4250-8c63-8b4e8ab300ce&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8', 'https://moodle3.cs.pollub.pl/course/view.php?id=244', 'https://moodle3.cs.pollub.pl/mod/attendance/view.php?id=1838');
 
-Subjects[12]= new Subject('Architektura komputerów i programowanie niskopoziomowe', 5, 8, 10, '', '');
-Subjects[13]= new Subject('Podstawy elektrotechniki i elektroniki', 5, 10, 12, '', '');
-Subjects[14]= new Subject('Język angielski I ', 5, 12, 14, '', '');
+Subjects[12]= new Subject('Architektura komputerów i programowanie niskopoziomowe', 5, 8, 10, 'https://teams.microsoft.com/l/channel/19%3ae9df51355be643d0aa0406f990216e6a%40thread.tacv2/General?groupId=3b104ee0-a9c0-44a5-bd88-954ddd5ca47e&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8', '');
+Subjects[13]= new Subject('Podstawy elektrotechniki i elektroniki', 5, 10, 12, 'https://teams.microsoft.com/l/channel/19%3a8f82a3e58c0a4937b88a30dd532f2f57%40thread.tacv2/Grupy%2520GE10%252C%2520GE12%252C%2520GE14?groupId=14304b8b-67c4-4dfb-94c7-d1c31e697f21&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8', '');
+Subjects[14]= new Subject('Język angielski I', 5, 12, 14, 'https://teams.microsoft.com/l/channel/19%3abd5504d201944156b4e1000eee4f72d0%40thread.tacv2/General?groupId=07717e96-4f6d-47f1-8ae5-bef29793ef40&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8', '');
 Subjects[15]= new Subject('Metrologia', 5, 18, 20 , 'https://teams.microsoft.com/l/team/19%3a2deea6793f5a48199f92efcecfb86844%40thread.tacv2/conversations?groupId=4a624bd3-8f3f-4399-9c2f-2040a970b039&tenantId=dbb41d7a-0043-4ee2-9843-6e4ff66cc9c8', '');
 
 

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://jakublabendowicz.github.io/allDesign/css/bodyStyle.css">
     <link rel="stylesheet" href="projects/Bubbles/style.css">
   </head>
-  <body id="container" onload="clock(), Theme.auto(7)">
+  <body id="container" onload="clock(), Theme.auto(7), setSubjects()">
     <div class="dotgroup1 dot1"></div>
     <div class="dotgroup1 dot2"></div>
     <div class="dotgroup1 dot3"></div>
@@ -43,7 +43,7 @@
       </div>
     </div>
 
-    <button class="lessonOpener" onclick="openSites()">Now lesson</button>
+    <button class="lessonOpener" onclick="openSites()" id="subject">Now lesson</button>
 
     <div class="panel" id="panel">
       <div class="p-header">
@@ -132,7 +132,7 @@
     <script type="text/javascript" src="projects/Bubbles/clock.js"></script>
     <script type="text/javascript" src="projects/Bubbles/search.js"></script>
     <script type="text/javascript" src="projects/Bubbles/setHistory.js"></script>
-    <script type="text/javascript" src="projects/allSchool/openSites.js"></script>
+    <script type="text/javascript" src="projects/allSchool/js/openSites.js"></script>
 
     <script src="https://jakublabendowicz.github.io/allDesign/js/Theme.js"></script>
     <script src="https://jakublabendowicz.github.io/allDesign/js/Card.js"></script>
