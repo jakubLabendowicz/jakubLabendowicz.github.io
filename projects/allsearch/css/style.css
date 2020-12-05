@@ -1,18 +1,11 @@
-#allSearchPanel {
-  visibility: visible;
-}
-
-#appsPanel {
-  visibility: hidden;
-}
-
-#allCollectionsPanel {
-  visibility: hidden;
-}
-
 body {
   margin-left: 400px;
   background-image: url("https://i.pinimg.com/originals/39/97/78/399778f170d632bf3b51173699ea661b.jpg");
+}
+
+.panel .p-bar {
+  background-color: #0d47a1;
+  box-shadow: 12px 12px 96px rgba(0, 0, 0, 0.16);
 }
 
 #container {
@@ -21,6 +14,7 @@ body {
 
 .m-categoryTitle {
   border-right-color: #0d47a1;
+  color: white;
 }
 
 .m-elementTitle {
