@@ -5,9 +5,9 @@ function getRandomInt(min, max) {
 }
 
 class Freestyle {
-  constructor(topicsTable, beatsTable) {
+  constructor(topicsTable) {
     this.topicsTable = topicsTable;
-    this.beatsTable = beatsTable;
+    // this.beatsTable = beatsTable;
   }
 
   randomTopic() {
@@ -15,10 +15,36 @@ class Freestyle {
     return this.topicsTable[random];
   }
 
-  randomBeats() {
+  randomBeat() {
     random = getRandomInt(0, this.beatsTable.size-1);
     return this.beatsTable[random];
   }
+
+  showTopic() {
+    first = this.randomTopic();
+    second = this.randomTopic();
+    third = this.randomTopic();
+    loop = true;
+    while (loop) {
+      loop = false;
+      if (first == second || first==third) {
+        first = this.randomTopic();
+        loop = true;
+      }
+      if (second == first || second==third) {
+        second = this.randomTopic();
+        loop = true;
+      }
+      if (third == first || third==second) {
+        third = this.randomTopic();
+        loop = true;
+      }
+    }
+    topics = first + ", " + second + ", " + third;
+    getElementById('topics').innerHTML = topics;
+  }
 }
 
-Freestyle freestyle = new Freestyle();
+var topics = ["abc", "bcd", "cde", "def", "efg"];
+
+Freestyle freestyle = new Freestyle(topics);

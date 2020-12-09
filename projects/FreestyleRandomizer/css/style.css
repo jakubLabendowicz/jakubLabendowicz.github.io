@@ -15,6 +15,7 @@ body {
   color: var(--bodyColor);
   margin-bottom: 100px;
   overflow-x: hidden;
+  background-image: linear-gradient(to bottom right, #212121, #000000);
 }
 
 header {
