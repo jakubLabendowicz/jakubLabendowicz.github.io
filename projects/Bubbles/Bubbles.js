@@ -1,5 +1,5 @@
 function bubbles() {
-  var quantity = document.getElementById('quantity').value;
+  // var quantity = document.getElementById('quantity').value;
   var bubbleTopColor = document.getElementById('bubbleTopColor').value;
   var bubbleBootomColor = document.getElementById('bubbleBootomColor').value;
 
@@ -18,3 +18,8 @@ function bubbles() {
   document.documentElement.style.setProperty('--bubbleBootomColor2', bubbleBootomColor2);
   document.documentElement.style.setProperty('--bubbleBootomColor3', bubbleBootomColor3);
 }
+
+document.documentElement.style.setProperty('--bubbleTopColor', "#4f7fd1");
+document.documentElement.style.setProperty('--bubbleBootomColor1', "#4f7fd1");
+document.documentElement.style.setProperty('--bubbleBootomColor2', "#4f7fd1");
+document.documentElement.style.setProperty('--bubbleBootomColor3', "#4f7fd1");
