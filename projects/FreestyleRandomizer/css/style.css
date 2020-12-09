@@ -5,6 +5,10 @@
   --bodyColor: white;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bodyBackgroundColor);
@@ -24,6 +28,21 @@ main {
 
 .title {
   font-size: 120px;
+}
+
+.beats {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+.topics {
+  font-size: 30px;
+  text-align: center;
 }
 
 .arrow {
@@ -46,6 +65,9 @@ footer {
   padding: 25px 50px 25px 50px;
   font-size: 30px;
   background-color: var(--bodyBackgroundColor);
+}
+footer a {
+  color: var(--bodyColor);
 }
 
 @media screen and (max-width: 1199px) {
