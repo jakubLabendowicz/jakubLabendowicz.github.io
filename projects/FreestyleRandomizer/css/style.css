@@ -9,36 +9,64 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bodyBackgroundColor);
   color: var(--bodyColor);
+  margin-bottom: 100px;
   overflow-x: hidden;
 }
 
 header {
-  padding: 25px 0px 100px 25px;
+  padding: 50px;
   font-size: 40px;
 }
 
-.left {
+main {
+  padding-top: 100px;
+}
+
+.title {
   font-size: 120px;
+}
+
+.arrow {
+  background-color: var(--bodyColor);
+  color: var(--bodyBackgroundColor);
+  border-radius: 100px;
+  height: 200px;
+  width: 200px;
+  font-size: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 footer {
   position: fixed;
   bottom: 0px;
   left: 0px;
-  padding: 25px;
+  right: 0px;
+  padding: 25px 50px 25px 50px;
   font-size: 30px;
+  background-color: var(--bodyBackgroundColor);
 }
 
 @media screen and (max-width: 1199px) {
-  .left {
+  .title {
     /* font-size: 100px; */
     text-align: center;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .left {
+  .title {
     font-size: 80px;
     text-align: center;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
