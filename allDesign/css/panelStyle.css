@@ -47,6 +47,9 @@ button:focus {
   background-color: var(--barBackgroundColor);
   color: var(--barColor);
 }
+.panel .p-bar .p-barBox {
+  margin-bottom: 25px;
+}
 .panel .p-bar .p-barBox .p-barBoxElement {
   border: none;
   border-radius: 10px;
