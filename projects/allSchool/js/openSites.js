@@ -88,4 +88,5 @@ function setSubjects() {
   for(i = 0; i<=15; i++) {
     Subjects[i].viewName();
   }
+    setTimeout("setSubjects()", 60000);
 }

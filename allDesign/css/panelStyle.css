@@ -26,6 +26,10 @@ a {
   box-shadow: 12px 12px 96px rgba(0, 0, 0, 0.16);
   background-color: var(--panelBackgroundColor);
   color: var(--panelColor);
+  overflow-y: auto;
+}
+.panel::-webkit-scrollbar {
+    width: 0px;
 }
 .panel .p-header {
   width: 300px;
