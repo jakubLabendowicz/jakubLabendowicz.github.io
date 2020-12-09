@@ -13,10 +13,8 @@ class Theme {
     this.number = Theme.counter++;
   }
 
-  run(dec=6) {
+  show(dec=6) {
     Theme.presentTheme = this.number;
-    document.getElementById('themeStatus').innerHTML = this.name;
-
     if (dec >=4) {
       document.body.style.backgroundColor = this.bodyBackgroundColor;
       document.body.style.color = this.bodyColor;
@@ -36,9 +34,19 @@ class Theme {
     }
   }
 
+  showName() {
+    document.getElementById('themeStatus').innerHTML = this.name;
+  }
+
   static change(dec=6) {
-    if (Theme.presentTheme == Themes.length-1) Themes[0].run(dec);
-    else Themes[Theme.presentTheme+1].run(dec);
+    if (Theme.presentTheme == Themes.length-1) {
+      Themes[0].show(dec);
+      Themes[0].showName();
+    }
+    else {
+      Themes[Theme.presentTheme+1].show(dec);
+      Themes[Theme.presentTheme+1].showName();
+    }
   }
 
   static auto(dec=6) {
@@ -46,10 +54,12 @@ class Theme {
     var hour = date.getHours();
 
     if (hour>=6 && hour<22) {
-      Themes[0].run(dec);
+      Themes[0].show(dec);
+      Themes[0].showName();
     }
     else if (hour>=22 || hour<6) {
-      Themes[1].run(dec);
+      Themes[1].show(dec);
+      Themes[1].showName();
     }
   }
 }
