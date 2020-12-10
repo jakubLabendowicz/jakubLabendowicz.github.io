@@ -5,46 +5,51 @@ function getRandomInt(min, max) {
 }
 
 class Freestyle {
-  constructor(topicsTable) {
+  constructor(topicsTable, beatsTable) {
     this.topicsTable = topicsTable;
-    // this.beatsTable = beatsTable;
+    this.beatsTable = beatsTable;
   }
 
   randomTopic() {
-    random = getRandomInt(0, this.topicsTable.size-1);
+    var random = getRandomInt(0, this.topicsTable.length-1);
     return this.topicsTable[random];
   }
 
   randomBeat() {
-    random = getRandomInt(0, this.beatsTable.size-1);
+    var random = getRandomInt(0, this.beatsTable.length-1);
     return this.beatsTable[random];
   }
 
   showTopic() {
-    first = this.randomTopic();
-    second = this.randomTopic();
-    third = this.randomTopic();
-    loop = true;
-    while (loop) {
-      loop = false;
+    var first = this.randomTopic();
+    var second = this.randomTopic();
+    var third = this.randomTopic();
+    // loop = true;
+    // while (loop) {
+    //   var loop = false;
       if (first == second || first==third) {
         first = this.randomTopic();
-        loop = true;
+        // loop = true;
       }
       if (second == first || second==third) {
         second = this.randomTopic();
-        loop = true;
+        // loop = true;
       }
       if (third == first || third==second) {
         third = this.randomTopic();
-        loop = true;
+        // loop = true;
       }
-    }
-    topics = first + ", " + second + ", " + third;
-    getElementById('topics').innerHTML = topics;
+    // }
+    var topics = first + ", " + second + ", " + third;
+    document.getElementById('topics').innerHTML = topics;
+  }
+
+  showBeat() {
+    document.getElementById('beat').src = this.randomBeat();
   }
 }
 
-var topics = ["abc", "bcd", "cde", "def", "efg"];
+var topics = ["Obraz", "Małpa", "Drzewo", "Życie", "Miłość"];
+var beats = ["https://www.youtube.com/embed/YS90FjNQfBY"];
 
-Freestyle freestyle = new Freestyle(topics);
+var freestyle = new Freestyle(topics, beats);
