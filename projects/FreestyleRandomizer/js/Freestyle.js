@@ -24,17 +24,19 @@ class Freestyle {
     var first = this.randomTopic();
     var second = this.randomTopic();
     var third = this.randomTopic();
-    // loop = true;
-    // while (loop) {
-    //   var loop = false;
+
+    var loop = true;
+    while (loop) {
       if (first == second || first==third) {
         first = this.randomTopic();
-        // loop = true;
-      }
+      } else loop = false;
+    }
+    loop = true;
+    while (loop) {
       if (second == first || second==third) {
         second = this.randomTopic();
-        // loop = true;
-      }
+      } else loop = false;
+    }
       if (third == first || third==second) {
         third = this.randomTopic();
         // loop = true;
