@@ -77,9 +77,7 @@ footer {
   font-size: 30px;
   background-color: var(--bodyBackgroundColor);
 }
-#footer {
-  display: block;
-}
+
 footer a {
   color: var(--bodyColor);
 }
