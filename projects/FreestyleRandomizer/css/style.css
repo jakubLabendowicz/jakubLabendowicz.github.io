@@ -9,13 +9,26 @@ a {
   text-decoration: none;
 }
 
+button{
+  border-style: none;
+}
+
+button:focus {
+  outline-style: none;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bodyBackgroundColor);
   color: var(--bodyColor);
   margin-bottom: 100px;
   overflow-x: hidden;
-  background-image: linear-gradient(to bottom right, #212121, #000000);
+  /* background-image: linear-gradient(to bottom right, #212121, #000000); */
 }
 
 header {
@@ -36,11 +49,6 @@ main {
   margin-right: auto;
 }
 
-iframe {
-  display: block;
-  margin: 0 auto;
-}
-
 .topics {
   font-size: 30px;
   text-align: center;
@@ -59,13 +67,16 @@ iframe {
 }
 
 footer {
-  position: fixed;
+  position: absolute;
   bottom: 0px;
   left: 0px;
   right: 0px;
   padding: 25px 50px 25px 50px;
   font-size: 30px;
   background-color: var(--bodyBackgroundColor);
+}
+#footer {
+  display: block;
 }
 footer a {
   color: var(--bodyColor);
