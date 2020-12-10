@@ -84,6 +84,11 @@ footer a {
   color: var(--bodyColor);
 }
 
+.beat {
+  width: 540px;
+  height: 315px;
+}
+
 @media screen and (max-width: 1199px) {
   .title {
     font-size: 110px;
