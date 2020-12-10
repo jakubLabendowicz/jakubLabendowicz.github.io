@@ -11,12 +11,12 @@ class Freestyle {
   }
 
   randomTopic() {
-    var random = getRandomInt(0, this.topicsTable.length-1);
+    var random = getRandomInt(0, this.topicsTable.length);
     return this.topicsTable[random];
   }
 
   randomBeat() {
-    var random = getRandomInt(0, this.beatsTable.length-1);
+    var random = getRandomInt(0, this.beatsTable.length);
     return this.beatsTable[random];
   }
 
@@ -37,10 +37,8 @@ class Freestyle {
         second = this.randomTopic();
       } else loop = false;
     }
-      if (third == first || third==second) {
-        third = this.randomTopic();
-        // loop = true;
-      }
+    // if (third == first || third==second) {
+    //   third = this.randomTopic();
     // }
     var topics = first + ", " + second + ", " + third;
     document.getElementById('topics').innerHTML = topics;
@@ -52,6 +50,6 @@ class Freestyle {
 }
 
 var topics = ["Obraz", "Małpa", "Drzewo", "Życie", "Miłość"];
-var beats = ["https://www.youtube.com/embed/YS90FjNQfBY"];
+var beats = ["https://www.youtube.com/embed/YS90FjNQfBY", "https://www.youtube.com/embed/mqFymG42huo", "https://www.youtube.com/embed/0KS1xHIglx0"];
 
 var freestyle = new Freestyle(topics, beats);
