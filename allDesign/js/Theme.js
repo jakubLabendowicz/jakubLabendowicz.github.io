@@ -45,7 +45,7 @@ class Theme {
     }
     else {
       Themes[Theme.presentTheme+1].show(dec);
-      Themes[Theme.presentTheme+1].showName();
+      Themes[Theme.presentTheme].showName();
     }
   }
 
