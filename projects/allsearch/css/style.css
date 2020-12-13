@@ -1,10 +1,10 @@
 body {
   margin-left: 400px;
-  background-image: url("https://i.pinimg.com/originals/39/97/78/399778f170d632bf3b51173699ea661b.jpg");
+  /* background-image: url("https://i.pinimg.com/originals/39/97/78/399778f170d632bf3b51173699ea661b.jpg"); */
 }
 
 .panel .p-bar {
-  background-color: #0d47a1;
+  background-color: #ffe082;
   box-shadow: 12px 12px 96px rgba(0, 0, 0, 0.16);
 }
 
@@ -13,10 +13,17 @@ body {
 }
 
 .m-categoryTitle {
-  border-right-color: #0d47a1;
-  color: white;
+  border-right-color: var(--bodyColor);
+  color: var(--bodyColor);
 }
 
 .m-elementTitle {
   color: #0d47a1;
+}
+
+.m-widget {
+  border-radius: 30px;
+  box-shadow: 12px 12px 96px rgba(0, 0, 0, 0.16);
+  background-color: var(--bodyBackgroundColor);
+  color: var(--bodyColor);
 }

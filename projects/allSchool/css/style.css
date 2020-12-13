@@ -1,14 +1,14 @@
 body {
   /* margin-left: 400px; */
-  background-image: url("https://i.pinimg.com/originals/de/cf/70/decf70a0c2d8676b4aabfce942a26606.jpg");
+  /* background-image: url("https://i.pinimg.com/originals/de/cf/70/decf70a0c2d8676b4aabfce942a26606.jpg");
   background-image: url('../background.jpg');
-  background-size: cover;
+  background-size: cover; */
   height: 100%;
   width: 100%;
 }
 
 .panel .p-bar {
-  background-color: #33691e;
+  background-color: #81c784;
   box-shadow: 12px 12px 96px rgba(0, 0, 0, 0.16);
 }
 
@@ -30,7 +30,7 @@ body {
 }
 
 .box:hover {
-  background-color: #33691e;
+  background-color: #81c784;
   color: black;
 }
 
