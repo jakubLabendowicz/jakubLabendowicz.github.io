@@ -1,16 +1,68 @@
 class Element {
-  constructor(name, background, text='') {
-    this.name = name;
+  constructor(id, background, text='') {
+    this.id = id;
     this.background = background;
     this.text = text;
   }
 
   showBackgroundColor(color) {
-    document.documentElement.style.setProperty(this.background, color);
+    if(!color.background=="") {
+      document.documentElement.style.setProperty(this.background, color.background);
+    }
   }
 
   showTextColor(color) {
-    document.documentElement.style.setProperty(this.text, color);
+    if(!color.text=="") {
+      document.documentElement.style.setProperty(this.text, color.text);
+    }
+  }
+
+  showColor(color) {
+    showBackgroundColor(color);
+    showTextColor(color);
+  }
+
+  static read() {
+
+  }
+}
+
+class Color {
+  constructor(name, background="", text="") {
+    this.name = name;
+    this.background = background;
+    this.text = text;
+  }
+}
+
+class Theme {
+  constructor(name) {
+    this.name = name;
+    this.elementsTable = Elements;
+  }
+
+  colorsTable;
+
+  setElementsTable(elementsTable) {
+    this.elementsTable = elementsTable;
+  }
+
+
+
+  showBackgroundColors() {
+    this.elementsTable[0].showBackgroundColor(this.colorsTable[0]);
+  }
+
+  showTextColors() {
+    this.elementsTable[0].showTextColor(this.colorsTable[0]);
+  }
+
+  showColors() {
+    this.elementsTable[0].showColor(this.colorsTable[0]);
+  }
+
+  showName() {
+    document.getElementById('themeStatus').innerHTML = this.name;
   }
 }
 
@@ -27,43 +79,14 @@ Bubbles[3] = new Element('bottom1', '--bubbleBootomColor1');
 Bubbles[4] = new Element('bottom2', '--bubbleBootomColor2');
 Bubbles[5] = new Element('bottom3', '--bubbleBootomColor3');
 
-class Color {
-  constructor(name, background, text='') {
-    this.name = name;
-    this.background = background;
-    this.text = text;
-  }
-}
-
 Colors = new Array();
-Colors[0] = new Colors('body', '--bodyBackgroundColor', '--bodyColor');
-Colors[1] = new Colors('panel', '--panelBackgroundColor', '--panelColor');
-Colors[2] = new Colors('bar', '--barBackgroundColor', '--barColor');
+Colors[0] = new Colors('body', 'white', 'black');
+Colors[1] = new Colors('panel', 'white', 'black');
+Colors[2] = new Colors('bar', 'white', 'black');
 
-
-class Theme {
-  constructor(name, elementsTable, colorsTable) {
-    this.name = name;
-    this.elementsTable = elementsTable;
-    this.colorsTable = colorsTable;
-  }
-
-  showBackgroundColors() {
-
-  }
-
-  showTextColors() {
-
-  }
-
-  showName() {
-    document.getElementById('themeStatus').innerHTML = this.name;
-  }
-}
 
 Themes = new Array();
-Themes[0]= new Theme("Light", 'white', 'black', 'white', 'black', 'white', 'black');
-Themes[1] = new Theme("Dark", 'black', 'white', 'black', 'white', 'black', 'white');
+Themes[0]= new Theme('light');
 
 
 class ThemeSchedule {

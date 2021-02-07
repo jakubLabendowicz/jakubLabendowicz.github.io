@@ -1,0 +1,14 @@
+.form {
+  font-size: 15px;
+
+  width: 466px;
+  height: 792px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.button {
+  width: 175px;
+  height: 50px;
+  border-radius: 5px;
+}
