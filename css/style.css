@@ -1,4 +1,6 @@
 @import url("https://use.typekit.net/cnj7jwd.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 :root {
   /* height, width */
@@ -11,8 +13,8 @@
   --firstBackgroundColor: white;
   --firstColor: #212121;
 
-  --secondBackgroundColor: #fc3;
-  --secondColor: #212121;
+  --secondBackgroundColor: #09171C;
+  --secondColor: #ffffff;
 
   --thirdBackgroundColor: url(../grafics/tlo.jpg);
   --thirdColor: white;
@@ -27,6 +29,8 @@
 
 body {
   font-family: poppins, sans-serif;
+  /* font-family: 'Lato', sans-serif; */
+  /* font-family: 'Roboto', sans-serif; */
   font-weight: 400;
   font-style: normal;
   font-size: var(--firstFontSize);
@@ -49,7 +53,7 @@ a {
   grid-gap: 40px;
 
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .btn {
