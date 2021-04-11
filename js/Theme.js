@@ -17,8 +17,8 @@ themeSwitch.addStatus("themeStatus");
 themeSwitch.addSchedule(0, 8.00, 19.59);
 themeSwitch.addSchedule(1, 20.00, 7.59);
 
-// $(document).ready(function(){
-//   $("#themeStatus").on("click", function(){
-//     themeSwitch.show();
-//   });
-// });
+$(document).ready(function(){
+  $("#themeStatus").on("click", function(){
+    themeSwitch.show();
+  });
+});
