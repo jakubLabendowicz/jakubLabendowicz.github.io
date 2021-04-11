@@ -17,5 +17,3 @@ themeController.addStatus("themeStatus");
 
 themeController.addSchedule(0, 8.00, 19.59);
 themeController.addSchedule(1, 20.00, 7.59);
-
-document.getElementById("themeStatus").addEventListener('click',function () {themeController.show()});
