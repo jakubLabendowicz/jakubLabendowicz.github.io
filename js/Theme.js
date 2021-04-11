@@ -23,3 +23,5 @@ $(document).ready(function(){
     themeSwitch.show();
   });
 });
+
+document.getElementById("test").addEventListener('click',function () {themeSwitch.show();;});
