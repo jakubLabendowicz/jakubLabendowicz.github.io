@@ -8,10 +8,11 @@ dark.add("--firstBackgroundColor", "#111111");
 dark.add("--firstColor", "white");
 dark.add("--shadowColor", "black");
 
-var themeSwitch = new ThemeSwitch("Switch");
+var themeSwitch = new ThemeSwitch();
 themeSwitch.add(light);
 themeSwitch.add(dark);
 
+themeSwitch.addButton("themeStatus");
 themeSwitch.addStatus("themeStatus");
 
 themeSwitch.addSchedule(0, 8.00, 19.59);
