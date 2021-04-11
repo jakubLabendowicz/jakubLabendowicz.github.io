@@ -24,4 +24,4 @@ $(document).ready(function(){
   });
 });
 
-document.getElementById("test").addEventListener('click',function () {themeSwitch.show();;});
+document.getElementById("themeStatus").addEventListener('click',function () {themeSwitch.show();;});
