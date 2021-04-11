@@ -20,6 +20,3 @@ themeSwitch.addSchedule(1, 20.00, 7.59);
 //     themeSwitch.show();
 //   });
 // });
-
-var script = document.getElementById("themeStatus");
-script.onclick = "themeSwitch.show()";
