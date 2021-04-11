@@ -8,14 +8,14 @@ dark.add("--firstBackgroundColor", "#111111");
 dark.add("--firstColor", "white");
 dark.add("--shadowColor", "black");
 
-var themeSwitch = new ThemeSwitch();
-themeSwitch.add(light);
-themeSwitch.add(dark);
+var themeController = new ThemeController();
+themeController.add(light);
+themeController.add(dark);
 
-themeSwitch.addButton("themeStatus");
-themeSwitch.addStatus("themeStatus");
+themeController.addButton("themeStatus");
+themeController.addStatus("themeStatus");
 
-themeSwitch.addSchedule(0, 8.00, 19.59);
-themeSwitch.addSchedule(1, 20.00, 7.59);
+themeController.addSchedule(0, 8.00, 19.59);
+themeController.addSchedule(1, 20.00, 7.59);
 
-document.getElementById("themeStatus").addEventListener('click',function () {themeSwitch.show()});
+document.getElementById("themeStatus").addEventListener('click',function () {themeController.show()});
