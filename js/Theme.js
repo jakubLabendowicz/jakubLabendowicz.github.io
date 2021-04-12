@@ -8,7 +8,7 @@ dark.add("--firstBackgroundColor", "#111111");
 dark.add("--firstColor", "white");
 dark.add("--shadowColor", "black");
 
-var themeController = new ThemeController();
+var themeController = new ThemeController("themeController");
 themeController.add(light);
 themeController.add(dark);
 
