@@ -1,5 +1,9 @@
-aside {
+.aside-section {
   height: 100vh;
   width: var(--asideWidth);
   background-color: #3a53ff;
+}
+
+.aside-container {
+  
 }

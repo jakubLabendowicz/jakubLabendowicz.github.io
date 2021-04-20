@@ -1,7 +1,20 @@
 header{
   height: 100vh;
   width: 100%;
-  background-color: white;
+  background-color: #f5f5f5;
+  display: flex;
   /* background-image: url("../graphics/tlo.jpg");
   background-size: cover; */
+}
+
+.header-left {
+  height: 100%;
+  width: 60%;
+  /* background-color: red; */
+}
+
+.header-right {
+  height: 100%;
+  width: 40%;
+  background-color: #c5cae9;
 }
