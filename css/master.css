@@ -16,7 +16,7 @@ body {
 
 .content-section {
   height: 100vh;
-  width: calc(100vw - var(--asideWidth));
+  width: 100%;
   background-color: white;
   overflow-y: scroll;
   overflow-x: hidden;

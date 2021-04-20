@@ -1,5 +1,4 @@
 .main-section{
-  /* height: 100vh; */
   width: 100%;
   background-color: #ffffff;
 }
@@ -8,47 +7,31 @@
 .card {
   padding: 50px 200px;
 }
-.card-container {
-  display: flex;
-}
+.card-container {}
 
 .flex-column-container {
   display: flex;
   flex-direction: column;
-}
-.flex-row {
-
+  gap: 25px;
 }
 .flex-row-container {
   display: flex;
   flex-direction: row;
-}
-.flex-column {
-
+  gap: 25px;
 }
 
-.aboutme-content {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-self: flex-start;
-}
-.aboutme-header {
+.card-header {
   font-size: 16px;
   font-weight: 500;
   color: #000000;
 }
-.aboutme-text {
-  display: flex;
-  margin-top: 8px;
-  margin-bottom: 8px;
+.card-text {
+  color: #616161;
   align-items: center;
   font-size: 15px;
   line-height: 2.6;
   text-decoration: none;
-  color: #616161;
 }
-
 .card-photo {
   height: 500px;
   background-color: lightgrey;
@@ -65,9 +48,6 @@
   }
 }
 @media screen and (max-width: 767px) {
-  /* .card {
-    padding: 50px 100px;
-  } */
   .flex-row-container {
     flex-direction: column;
   }
