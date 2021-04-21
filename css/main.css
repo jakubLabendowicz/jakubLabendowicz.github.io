@@ -32,15 +32,38 @@
   line-height: 2.6;
   text-decoration: none;
 }
-.card-photo {
-  height: 500px;
-  background-color: lightgrey;
-}
-.card-s-photo {
-  height: 200px;
-  background-color: lightgrey;
+.card-graphics{
+  background-position: center;
+  background-size: cover;
+  text-decoration: none;
 }
 
+.aboutme-photo {
+  /* background-color: lightgrey; */
+  height: 600px;
+}
+
+.skills-baner {
+  height: 500px;
+}
+
+.social-logo {
+  background-position: center;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  text-decoration: none;
+}
+
+#cv {background-color: #fafafa}
+
+#ME{background-image: url("../graphics/1618434100115-01-01.jpeg")}
+#SB{background-image: url("../graphics/micah-boswell-OPnBJ5L2oxs-unsplash.jpg")}
+#FB{background-image: url("../graphics/f_logo_RGB-Hex-Blue_512.png")}
+#LI{background-image: url("../graphics/LI-In-Bug.png")}
+#GH{background-image: url("../graphics/GitHub-Mark-120px-plus.png")}
+#GL{background-image: url("../graphics/gitlab-icon-rgb.png")}
+#QR{background-image: url("../graphics/.png")}
 
 @media screen and (max-width: 1199px) {
   .card {
@@ -51,4 +74,13 @@
   .flex-row-container {
     flex-direction: column;
   }
+}
+
+.card-photo {
+  height: 500px;
+  background-color: lightgrey;
+}
+.card-s-photo {
+  height: 200px;
+  background-color: lightgrey;
 }
