@@ -38,6 +38,35 @@
   text-decoration: none;
 }
 
+
+.project {
+  /* background-color: #f5f5f5; */
+  box-shadow: 12px 12px 96px rgba(0, 0, 0, 0.16);
+}
+.project-logo {
+  background-color: #070123;
+  height: 200px;
+}
+.project-container {
+  padding: 0px 15px 15px 15px;
+}
+.project-header {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+.project-link {
+  color: #616161;
+  align-items: center;
+  font-size: 15px;
+  line-height: 2.6;
+  text-decoration: none;
+}
+.project-link:hover {
+  color: #000000;
+}
+
+
 .aboutme-photo {
   /* background-color: lightgrey; */
   height: 600px;
