@@ -65,6 +65,11 @@
 .project-link:hover {
   color: #000000;
 }
+.project-subheader {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+}
 
 
 .aboutme-photo {
