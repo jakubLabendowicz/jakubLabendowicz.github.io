@@ -1,6 +1,10 @@
 .aside-section {
-  height: calc(100vh - 30px);
-  width: calc(var(--asideWidth) - 30px);
+  /*+++*/
+  /* height: calc(100vh - 30px);
+  width: calc(var(--asideWidth) - 30px); */
+  width: calc(100vw - 30px);
+  height: calc(var(--asideHeight) - 30px);
+
   background-color: #3a53ff;
   padding: 15px;
 }
@@ -8,6 +12,7 @@
 .aside-container {
   display: grid;
   grid-row-gap: 30px;
+  grid-template-rows: 100px auto;
 }
 
 .btn{

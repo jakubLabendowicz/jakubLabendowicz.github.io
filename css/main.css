@@ -44,7 +44,8 @@
 }
 
 .skills-baner {
-  height: 500px;
+  /* height: 500px;
+  height: 100%; */
 }
 
 .social-logo {
@@ -73,6 +74,9 @@
 @media screen and (max-width: 767px) {
   .flex-row-container {
     flex-direction: column;
+  }
+  .skills-baner {
+    display: none;
   }
 }
 
