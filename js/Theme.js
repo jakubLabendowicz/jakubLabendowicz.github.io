@@ -1,19 +1,36 @@
-var light = new Theme("Jasny");
-light.add("--firstBackgroundColor", "white");
-light.add("--firstColor", "black");
-light.add("--shadowColor", "#DDDDDD");
+var light = new Theme("Light");
+light.add("--mainBackgroundColor", "#ffffff");
+light.add("--cardHeaderColor", "#000000");
+light.add("--cardTextColor", "#616161");
+light.add("--cardTextHoverColor", "#000000");
+light.add("--projectShadowColor", "#00000029");
+light.add("--CVBackgroundColor", "#fafafa");
 
-var dark = new Theme("Ciemny");
-dark.add("--firstBackgroundColor", "#111111");
-dark.add("--firstColor", "white");
-dark.add("--shadowColor", "black");
+var dimmed = new Theme("Dimmed");
+dimmed.add("--mainBackgroundColor", "#ffffff");
+dimmed.add("--cardHeaderColor", "#000000");
+dimmed.add("--cardTextColor", "#616161");
+dimmed.add("--cardTextHoverColor", "#000000");
+dimmed.add("--projectShadowColor", "#00000029");
+dimmed.add("--CVBackgroundColor", "#fafafa");
+
+var dark = new Theme("Dark");
+dark.add("--mainBackgroundColor", "#212121");
+dark.add("--cardHeaderColor", "#ffffff");
+dark.add("--cardTextColor", "#eeeeee");
+dark.add("--cardTextHoverColor", "#ffffff");
+dark.add("--projectShadowColor", "#000000");
+dark.add("--CVBackgroundColor", "#1a1a1a");
 
 var themeController = new ThemeController("themeController");
-themeController.add(light);
-themeController.add(dark);
+themeController.addTheme(light);
+themeController.addTheme(dimmed);
+themeController.addTheme(dark);
 
 themeController.addButton("themebutton");
-themeController.addStatus("themebutton");
+// themeController.addButton("themebutton2");
+// themeController.addStatus("themebutton");
 
-themeController.addSchedule(0, 8.00, 19.59);
-themeController.addSchedule(1, 20.00, 7.59);
+// document.getElementById("defaultThemeSetter2").addEventListener('click',function () {themeController.synchronizeLocalTheme()});
+
+themeController.run();
