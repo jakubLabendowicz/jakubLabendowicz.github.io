@@ -4,7 +4,8 @@
   --cardTextColor: #616161;
   --cardTextHoverColor: #000000;
   --projectShadowColor: #00000029;
-  --CVBackgroundColor: #fafafa
+  --CVBackgroundColor: #fafafa;
+  --GHImage: url("../graphics/GitHub-Mark-120px-plus.png");
 }
 
 .main-section{
@@ -54,7 +55,7 @@
 }
 .project-logo {
   /* background-color: #070123; */
-  background-color: #3a53ff;
+  background-color: #1a48f3;
   height: 200px;
 }
 .project-container {
@@ -100,15 +101,22 @@
   text-decoration: none;
 }
 
+.contact-qr {
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+}
+
 #cv {background-color: var(--CVBackgroundColor)}
 
 #ME{background-image: url("../graphics/1618434100115-01-01.jpeg")}
 #SB{background-image: url("../graphics/micah-boswell-OPnBJ5L2oxs-unsplash.jpg")}
 #FB{background-image: url("../graphics/f_logo_RGB-Hex-Blue_512.png")}
 #LI{background-image: url("../graphics/LI-In-Bug.png")}
-#GH{background-image: url("../graphics/GitHub-Mark-120px-plus.png")}
+#GH{background-image: var(--GHImage)}
 #GL{background-image: url("../graphics/gitlab-icon-rgb.png")}
-#QR{background-image: url("../graphics/.png")}
+#QR{background-image: url("../graphics/QR.png")}
 
 @media screen and (max-width: 1199px) {
   .card {
