@@ -6,6 +6,7 @@
   --projectShadowColor: #00000029;
   --CVBackgroundColor: #fafafa;
   --GHImage: url("../graphics/GitHub-Mark-120px-plus.png");
+  --QRImage: url("../graphics/QRDark.png");
 }
 
 .main-section{
@@ -116,7 +117,7 @@
 #LI{background-image: url("../graphics/LI-In-Bug.png")}
 #GH{background-image: var(--GHImage)}
 #GL{background-image: url("../graphics/gitlab-icon-rgb.png")}
-#QR{background-image: url("../graphics/QR.png")}
+#QR{background-image: var(--QRImage)}
 
 @media screen and (max-width: 1199px) {
   .card {
