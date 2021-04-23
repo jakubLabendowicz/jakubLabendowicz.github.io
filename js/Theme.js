@@ -20,12 +20,12 @@ light.add("--QRImage", "url('../graphics/QRDark.png')");
 //dimmed.add("--QRImage", "url('../graphics/QRLight.png')");
 
 var dark = new Theme("Dark");
-dark.add("--mainBackgroundColor", "#212121");
+dark.add("--mainBackgroundColor", "#101010");
 dark.add("--cardHeaderColor", "#ffffff");
 dark.add("--cardTextColor", "#eeeeee");
 dark.add("--cardTextHoverColor", "#ffffff");
 dark.add("--projectShadowColor", "#000000");
-dark.add("--CVBackgroundColor", "#1a1a1a");
+dark.add("--CVBackgroundColor", "#000000");
 dark.add("--GHImage", "url('../graphics/GitHub-Mark-Light-64px.png')");
 dark.add("--QRImage", "url('../graphics/QRLight.png')");
 
