@@ -126,6 +126,20 @@
   height: 300px;
   width: 300px;
 }
+.contact-box {
+  border: none;
+  border-radius: 5px;
+  height: 100px;
+  text-align: center;
+  background-color: lightgrey;
+  text-decoration: none;
+  box-shadow: 12px 12px 96px var(--projectShadowColor);
+}
+.contact-box-container {
+  line-height: 100px;
+  font-size: 17px;
+  color: #000000;
+}
 
 #cv {background-color: var(--CVBackgroundColor)}
 
