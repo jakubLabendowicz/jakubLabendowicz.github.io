@@ -133,7 +133,7 @@
   .flex-row-container {
     flex-direction: column;
   }
-  .skills-baner {
+  .mobile-hidder {
     display: none;
   }
 }
