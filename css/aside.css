@@ -38,3 +38,6 @@
   background-color: #efefef;
   color: black;
 }
+.btn:hover {
+  background-color: #808080;
+}
