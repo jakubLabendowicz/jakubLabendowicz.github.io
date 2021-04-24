@@ -114,9 +114,11 @@ a.card-text:hover {
 /**********INDIVIDUAL COMPONENTS**********/
 #ME{background-image: url("../graphics/1618434100115-01-01.jpeg"); height: 600px}
 
+.projects-card {justify-content: space-between}
 .project {
   box-shadow: 12px 12px 96px var(--cardComponentshadowColor);
   border-radius: 5px;
+  width: 225px;
 }
 .project-logo {
   background-color: #1a48f3;
@@ -155,13 +157,18 @@ a.card-text:hover {
 
 
 
-
+@media screen and (max-width: 1641px) {
+  .projects-card{justify-content: center}
+}
 @media screen and (max-width: 1199px) {
   .card {
     padding: 50px 100px;
   }
 }
 @media screen and (max-width: 767px) {
+  .project{
+    width: 100%;
+  }
   .card {
     padding: 50px 30px;
   }
