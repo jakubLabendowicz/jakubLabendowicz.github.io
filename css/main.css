@@ -18,7 +18,6 @@
 .card {
   padding: 50px 200px;
 }
-.card-container {}
 
 .flex-column-container {
   display: flex;
@@ -31,12 +30,29 @@
   gap: 25px;
 }
 
+/**********CARD COMPONENTS**********/
+/* CARD HEADER */
 .card-header {
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
   color: var(--cardHeaderColor);
 }
+a.card-header:hover {
+
+}
+/* CARD DESCRIPTION */
+.card-description {
+  color: var(--cardTextColor);
+  align-items: center;
+  font-size: 12px;
+  line-height: 2.6;
+  text-decoration: none;
+}
+a.card-description:hover {
+
+}
+/* CARD TEXT */
 .card-text {
   color: var(--cardTextColor);
   align-items: center;
@@ -44,25 +60,65 @@
   line-height: 2.6;
   text-decoration: none;
 }
+a.card-text:hover {
+  color: var(--cardTextHoverColor);
+}
+/* CARD BUTTON */
+.card-button {
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+.card-button:hover {
+
+}
+.card-button-container {
+  font-size: 20px;
+}
+.card-button-container:hover {
+
+}
+/* CARD BOX */
+.card-box{
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  background-color: lightgrey;
+  text-decoration: none;
+  box-shadow: 12px 12px 96px var(--projectShadowColor);
+}
+.card-box:hover{
+
+}
+.card-box-container{
+  font-size: 17px;
+  color: #000000;
+}
+.card-box-container:hover{
+
+}
+/* CARD GRAPHICS */
 .card-graphics{
   background-position: center;
   background-size: cover;
   text-decoration: none;
-}
-
-.aboutme-photo {
-  /* background-color: lightgrey; */
-  height: 600px;
   border-radius: 5px;
 }
+.card-graphics:hover{
+
+}
+
+
+
+/**********INDIVIDUAL COMPONENTS**********/
+#ME{background-image: url("../graphics/1618434100115-01-01.jpeg"); height: 600px}
 
 .project {
-  /* background-color: #f5f5f5; */
   box-shadow: 12px 12px 96px var(--projectShadowColor);
   border-radius: 5px;
 }
 .project-logo {
-  /* background-color: #070123; */
   background-color: #1a48f3;
   height: 200px;
   border-radius: 5px 5px 0px 0px;
@@ -76,80 +132,28 @@
   text-decoration: none;
   color: var(--cardHeaderColor);
 }
-.project-link {
-  color: var(--cardTextColor);
-  align-items: center;
-  font-size: 15px;
-  line-height: 2.6;
-  text-decoration: none;
-}
-.project-link:hover {
-  color: var(--cardTextHoverColor);
-}
-.project-subheader {
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--cardHeaderColor);
-}
 
-.skills-baner {
-  /* height: 500px;
-  height: 100%; */
-  border-radius: 5px;
-}
-
-.social-logo {
-  background-position: center;
-  background-size: cover;
-  height: 100px;
-  width: 100px;
-  text-decoration: none;
-}
-
-.cv-button {
-  border: none;
-  border-radius: 5px;
-  height: 150px;
-  text-align: center;
-  background-color: #1745ee;
-  text-decoration: none;
-}
-.cv-button-container {
-  line-height: 150px;
-  font-size: 20px;
-  color: #ffffff;
-}
-
-.contact-qr {
-  background-position: center;
-  background-size: cover;
-  height: 300px;
-  width: 300px;
-}
-.contact-box {
-  border: none;
-  border-radius: 5px;
-  height: 100px;
-  text-align: center;
-  background-color: lightgrey;
-  text-decoration: none;
-  box-shadow: 12px 12px 96px var(--projectShadowColor);
-}
-.contact-box-container {
-  line-height: 100px;
-  font-size: 17px;
-  color: #000000;
-}
-
-#cv {background-color: var(--CVBackgroundColor)}
-
-#ME{background-image: url("../graphics/1618434100115-01-01.jpeg")}
 #SB{background-image: url("../graphics/micah-boswell-OPnBJ5L2oxs-unsplash.jpg")}
+
+.social-logo {height: 100px; width: 100px}
+.social-logo:hover {height: 110px; width: 110px}
 #FB{background-image: url("../graphics/f_logo_RGB-Hex-Blue_512.png")}
 #LI{background-image: url("../graphics/LI-In-Bug.png")}
 #GH{background-image: var(--GHImage)}
 #GL{background-image: url("../graphics/gitlab-icon-rgb.png")}
-#QR{background-image: var(--QRImage)}
+
+#cv {background-color: var(--CVBackgroundColor)}
+#cv-button {height: 150px; background-color: #1745ee}
+#cv-button:hover {background-color: grey}
+#cv-button-container {line-height: 150px; color: #ffffff}
+
+#QR{background-image: var(--QRImage); height: 300px; width: 300px}
+.contact-box {height: 100px;}
+.contact-box-container {line-height: 100px;}
+
+
+
+
 
 @media screen and (max-width: 1199px) {
   .card {
@@ -166,15 +170,4 @@
   .mobile-hidder {
     display: none;
   }
-}
-
-.card-photo {
-  height: 500px;
-  background-color: lightgrey;
-  border-radius: 5px;
-}
-.card-s-photo {
-  height: 200px;
-  background-color: lightgrey;
-  border-radius: 5px;
 }
