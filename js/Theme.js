@@ -1,4 +1,4 @@
-var light = new Theme("Light");
+var light = new Theme("Jasny");
 light.add("--mainBackgroundColor", "#ffffff");
 
 light.add("--cardHeaderColor", "#000000");
@@ -24,7 +24,7 @@ light.add("--QRImage", "url('../graphics/QRDark.png')");
 //dimmed.add("--GHImage", "url('../graphics/GitHub-Mark-120px-plus.png')");
 //dimmed.add("--QRImage", "url('../graphics/QRLight.png')");
 
-var dark = new Theme("Dark");
+var dark = new Theme("Ciemny");
 dark.add("--mainBackgroundColor", "#101010");
 
 dark.add("--cardHeaderColor", "#ffffff");
