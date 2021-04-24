@@ -1,9 +1,14 @@
 var light = new Theme("Light");
 light.add("--mainBackgroundColor", "#ffffff");
+
 light.add("--cardHeaderColor", "#000000");
+light.add("--cardDescriptionColor", "#616161");
+light.add("--cardDescriptionHoverColor", "#000000");
 light.add("--cardTextColor", "#616161");
 light.add("--cardTextHoverColor", "#000000");
-light.add("--projectShadowColor", "#00000029");
+light.add("--cardBoxColor", "#d2d2d2");
+light.add("--cardComponentshadowColor", "#00000029");
+
 light.add("--CVBackgroundColor", "#fafafa");
 light.add("--GHImage", "url('../graphics/GitHub-Mark-120px-plus.png')");
 light.add("--QRImage", "url('../graphics/QRDark.png')");
@@ -21,10 +26,15 @@ light.add("--QRImage", "url('../graphics/QRDark.png')");
 
 var dark = new Theme("Dark");
 dark.add("--mainBackgroundColor", "#101010");
+
 dark.add("--cardHeaderColor", "#ffffff");
+dark.add("--cardDescriptionColor", "#eeeeee");
+dark.add("--cardDescriptionHoverColor", "#ffffff");
 dark.add("--cardTextColor", "#eeeeee");
 dark.add("--cardTextHoverColor", "#ffffff");
-dark.add("--projectShadowColor", "#000000");
+dark.add("--cardBoxColor", "#212121");
+dark.add("--cardComponentshadowColor", "#000000");
+
 dark.add("--CVBackgroundColor", "#000000");
 dark.add("--GHImage", "url('../graphics/GitHub-Mark-Light-64px.png')");
 dark.add("--QRImage", "url('../graphics/QRLight.png')");

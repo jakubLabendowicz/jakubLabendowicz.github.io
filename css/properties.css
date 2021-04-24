@@ -1,3 +1,31 @@
+.flex-column-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.flex-row-container {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+.m-flex-row-container {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.d-flex{display: flex}
+
+.fd-column{flex-direction: column}
+.fd-row{flex-direction: row}
+
+.fw-wrap{flex-wrap: wrap}
+
+.jc-flex-start{justify-content: flex-start}
+.jc-center{justify-content: center}
+.jc-flex-end{justify-content: flex-end}
+.jc-space-beetwen{justify-content: space-between}
+
 .width-100{width: 100%}
 .width-95{width: 95%}
 .width-85{width: 85%}
@@ -10,11 +38,13 @@
 .width-15{width: 15%}
 .width-10{width: 10%}
 
-.justify-content-flex-start{justify-content: flex-start}
-.justify-content-center{justify-content: center}
-.justify-content-flex-end{justify-content: flex-end}
-.justify-content-space-beetwen{justify-content: space-between}
 
+@media screen and (max-width: 767px) {
+  .m-d-none {display: none}
+}
+@media screen and (min-width: 767px) {
+  .c-d-none {display: none}
+}
 
 @media screen and (max-width: 1199px) {
 
@@ -34,4 +64,8 @@
   .width-10{width: 100%}
 
   .justify-content-space-beetwen{justify-content: center}
+
+  .m-flex-row-container{
+    flex-direction: column;
+  }
 }

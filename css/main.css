@@ -1,13 +1,21 @@
 :root {
   --mainBackgroundColor: #ffffff;
+
   --cardHeaderColor: #000000;
+  --cardDescriptionColor: #616161;
+  --cardDescriptionHoverColor: #000000;
   --cardTextColor: #616161;
   --cardTextHoverColor: #000000;
-  --projectShadowColor: #00000029;
+  --cardBoxColor: #d2d2d2;
+  --cardComponentshadowColor: #00000029;
+
   --CVBackgroundColor: #fafafa;
   --GHImage: url("../graphics/GitHub-Mark-120px-plus.png");
   --QRImage: url("../graphics/QRDark.png");
 }
+
+
+
 
 .main-section{
   width: 100%;
@@ -19,16 +27,8 @@
   padding: 50px 200px;
 }
 
-.flex-column-container {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-.flex-row-container {
-  display: flex;
-  flex-direction: row;
-  gap: 25px;
-}
+
+
 
 /**********CARD COMPONENTS**********/
 /* CARD HEADER */
@@ -50,7 +50,7 @@ a.card-header:hover {
   text-decoration: none;
 }
 a.card-description:hover {
-
+  color: var(--cardTextHoverColor);
 }
 /* CARD TEXT */
 .card-text {
@@ -84,16 +84,16 @@ a.card-text:hover {
   border: none;
   border-radius: 5px;
   text-align: center;
-  background-color: lightgrey;
+  background-color: var(--cardBoxColor);
+  color: var(--cardHeaderColor);
   text-decoration: none;
-  box-shadow: 12px 12px 96px var(--projectShadowColor);
+  box-shadow: 12px 12px 96px var(--cardComponentshadowColor);
 }
 .card-box:hover{
 
 }
 .card-box-container{
   font-size: 17px;
-  color: #000000;
 }
 .card-box-container:hover{
 
@@ -115,7 +115,7 @@ a.card-text:hover {
 #ME{background-image: url("../graphics/1618434100115-01-01.jpeg"); height: 600px}
 
 .project {
-  box-shadow: 12px 12px 96px var(--projectShadowColor);
+  box-shadow: 12px 12px 96px var(--cardComponentshadowColor);
   border-radius: 5px;
 }
 .project-logo {
@@ -135,8 +135,9 @@ a.card-text:hover {
 
 #SB{background-image: url("../graphics/micah-boswell-OPnBJ5L2oxs-unsplash.jpg")}
 
-.social-logo {height: 100px; width: 100px}
-.social-logo:hover {height: 110px; width: 110px}
+.social-logo {height: 110px; width: 110px; justify-content: center; align-items: center;}
+.social-logo-container {height: 100px; width: 100px; margin: auto}
+.social-logo-container:hover {height: 110px; width: 110px}
 #FB{background-image: url("../graphics/f_logo_RGB-Hex-Blue_512.png")}
 #LI{background-image: url("../graphics/LI-In-Bug.png")}
 #GH{background-image: var(--GHImage)}
@@ -163,9 +164,6 @@ a.card-text:hover {
 @media screen and (max-width: 767px) {
   .card {
     padding: 50px 30px;
-  }
-  .flex-row-container {
-    flex-direction: column;
   }
   .mobile-hidder {
     display: none;
