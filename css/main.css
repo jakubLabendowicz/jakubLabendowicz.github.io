@@ -108,7 +108,27 @@ a.card-text:hover {
 .card-graphics:hover{
 
 }
+/* CARD INPUT */
+.card-input{
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  background-color: var(--cardBoxColor);
+  color: var(--cardHeaderColor);
+  text-decoration: none;
+  box-shadow: 12px 12px 96px var(--cardComponentshadowColor);
+  padding: 0px 10px;
+  height: 50px;
+}
+.card-input:hover{
 
+}
+.card-input-container{
+  font-size: 15px;
+}
+.card-input-container:hover{
+
+}
 
 
 /**********INDIVIDUAL COMPONENTS**********/
@@ -153,6 +173,17 @@ a.card-text:hover {
 #QR{background-image: var(--QRImage); height: 300px; width: 300px}
 .contact-box {height: 100px;}
 .contact-box-container {line-height: 100px;}
+
+#form-button {height: 60px; background-color: #1745ee}
+#form-button:hover {background-color: grey}
+#form-button-container {
+  line-height: 60px;
+  color: #ffffff;
+  background-color: #00000000;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+ }
 
 #TT{background-color: lightgrey}
 

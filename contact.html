@@ -29,6 +29,40 @@
       <main class="main-section">
         <div class="main-container">
 
+          <section class="card" id="form">
+            <div class="m-flex-row-container jc-center">
+              <div class="width-55 flex-column-container">
+                <div>
+                  <div class="card-header">Formularz kontaktowy</div>
+                </div>
+                <form class="flex-column-container jc-center" onsubmit="sendForm(this)" method="post">
+                  <div class="">
+                    <label class="width-100 card-text">Imię i nazwisko*</label>
+                    <input type="text" class="width-100 card-input" required name="name"></input>
+                  </div>
+                  <div class="">
+                    <label class="width-100 card-text">E-mail*</label>
+                    <input type="text" class="width-100 card-input" required pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|'(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*')@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])" name="email"></input>
+                  </div>
+                  <div class="">
+                    <label class="width-100 card-text">Numer telefonu</label>
+                    <input type="text" class="width-100 card-input" pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$" name="phone"></input>
+                  </div>
+                  <div class="width-100">
+                    <label class="width-100 card-text">Treść wiadomości*</label>
+                    <div style="width-100"></div>
+                    <textarea class="width-100 card-input" required style="height: 150px" name="message"></textarea>
+                  </div>
+                  <div class="flex-row-container jc-center">
+                    <div class="width-45 card-button" id="form-button">
+                      <input type="submit" name="" value="Wyślij" class="card-button-container width-100" id="form-button-container">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+
           <section class="card" id="contact">
             <div class="m-flex-row-container jc-space-beetwen">
               <div class="contact-qr card-graphics m-d-none" id="QR"></div>
@@ -89,8 +123,7 @@
       </footer>
     </div>
 
-    <script src="js/Theme.js">
-
-    </script>
+    <script src="js/Theme.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
