@@ -44,4 +44,10 @@
   .header-section-container {
     padding: 50px 30px;
   }
+  .header-title {
+    font-size: 60px;
+  }
+  .header-subtitle {
+    font-size: 25px;
+  }
 }
