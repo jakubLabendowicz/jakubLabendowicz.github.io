@@ -185,6 +185,10 @@ a.card-text:hover {
   border: none;
  }
 
+#PO {background-image: url("../graphics/portfolio.png")}
+#P1 {background-image: url("../graphics/projekt1.png")}
+#P2 {background-image: url("../graphics/projekt2.png")}
+
 #TT{background-color: lightgrey}
 
 @media screen and (max-width: 1641px) {
