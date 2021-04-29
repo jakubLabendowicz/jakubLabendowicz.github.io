@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/footer.css">
 
     <script src="https://labendowicz.pl/Wilga/js/Wilga.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body class="container">
     <aside class="aside-section">
@@ -73,58 +74,7 @@
               <div>
                 <div class="card-header">Repozytoria</div>
               </div>
-              <div class="m-flex-row-container projects-card fw-wrap">
-                <div class="project flex-column-container">
-                  <div class="project-logo"></div>
-                  <div class="project-container">
-                    <div class="project-header">Wilga Design System</div>
-                    <div class="flex-column-container" style="gap: 0px">
-                      <a href="" class="card-text">Demo</a>
-                      <a href="" class="card-text">Repozytorium</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="project flex-column-container">
-                  <div class="project-logo"></div>
-                  <div class="project-container">
-                    <div class="project-header">Keep</div>
-                    <div class="flex-column-container" style="gap: 0px">
-                      <a href="" class="card-text">Demo</a>
-                      <a href="" class="card-text">Repozytorium</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="project flex-column-container">
-                  <div class="project-logo"></div>
-                  <div class="project-container">
-                    <div class="project-header">Office Space</div>
-                    <div class="flex-column-container" style="gap: 0px">
-                      <a href="" class="card-text">Demo</a>
-                      <a href="" class="card-text">Repozytorium</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="project flex-column-container">
-                  <div class="project-logo"></div>
-                  <div class="project-container">
-                    <div class="project-header">Home Space</div>
-                    <div class="flex-column-container" style="gap: 0px">
-                      <a href="" class="card-text">Demo</a>
-                      <a href="" class="card-text">Repozytorium</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="project flex-column-container">
-                  <div class="project-logo"></div>
-                  <div class="project-container">
-                    <div class="project-header">Wilga</div>
-                    <div class="flex-column-container" style="gap: 0px">
-                      <a href="" class="card-text">Demo</a>
-                      <a href="" class="card-text">Repozytorium</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div class="m-flex-row-container projects-card fw-wrap" id="repositoriesContainer"></div>
             </div>
           </section>
 
