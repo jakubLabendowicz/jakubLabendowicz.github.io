@@ -14,16 +14,34 @@
   display: flex;
 }
 
-.header-left {
-  height: 100%;
-  width: 60%;
-  /* background-color: red; */
+.header-section-container {
+  padding: 50px 200px;
+  width: calc(100vw - 100px)
 }
 
-.header-right {
-  height: 100%;
-  width: 40%;
-  background-color: #c5cae9;
+.header-title {
+  color: #ffffff;
+  align-items: center;
+  font-size: 85px;
+  /* line-height: 2.6; */
+  text-decoration: none;
 }
 
-#LH{background-image: url("../graphics/juskteez-vu-TIrXot28Znc-unsplash.jpg")}
+.header-subtitle {
+  color: #ffffffbb;
+  align-items: center;
+  font-size: 35px;
+  /* line-height: 2.6; */
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .header-section-container {
+    padding: 50px 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-section-container {
+    padding: 50px 30px;
+  }
+}

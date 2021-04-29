@@ -1,10 +1,13 @@
 function sendForm(form) {
   var storage = new Storage("form");
+  var time = new Date();
+
   var thisForm = {
     name: form.name.value,
     email: form.email.value,
     phone: form.phone.value,
-    message: form.message.value
+    message: form.message.value,
+    time: time
   }
 
   if (storage.downloadLocal() == null) {
