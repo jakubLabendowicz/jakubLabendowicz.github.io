@@ -34,3 +34,11 @@ body {
     font-size: 16px;
     font-weight: 600;
 }
+
+
+
+@media screen and (max-width: 992px) {
+    .typography_section_title {
+        font-size: 30px;
+    }
+}

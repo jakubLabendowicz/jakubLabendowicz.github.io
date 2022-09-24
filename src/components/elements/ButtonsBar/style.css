@@ -11,3 +11,9 @@
     flex-direction: row;
     gap: 32px;
 }
+
+@media screen and (max-width: 992px) {
+    .buttons_bar_inner {
+        gap: 8px;
+    }
+}

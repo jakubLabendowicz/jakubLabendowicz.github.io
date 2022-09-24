@@ -67,3 +67,11 @@
     flex-direction: row;
     gap: 32px;
 }
+
+
+
+@media screen and (max-width: 992px) {
+    .platformbar_footer_inner {
+        gap: 8px;
+    }
+}
