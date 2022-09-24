@@ -1,0 +1,15 @@
+.button_outer {
+    height: 48px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.button_inner {
+    height: 48px;
+    width: auto;
+}
+
+.button_outer:hover {
+    background-color: #adb5bd;
+    cursor: pointer;
+}

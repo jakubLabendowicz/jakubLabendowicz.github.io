@@ -1,0 +1,9 @@
+{
+    "icons": [
+        {
+            "type": "icon",
+            "name": "air_home",
+            "file": "air_home.svg"
+        }
+    ]
+}

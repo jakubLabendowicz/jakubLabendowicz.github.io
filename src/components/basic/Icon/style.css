@@ -1,0 +1,150 @@
+.icon_outer {
+    height: 24px;
+    width: 24px;
+    padding: 12px;
+}
+
+.icon_inner {
+    height: 24px;
+    width: 24px;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_github {
+    background-image: url('../../../icons/github-logo_icon-icons.com_73546.svg');
+}
+
+.icon_gitlab {
+    background-image: url('../../../icons/gitlab_logo_icon_145250.svg');
+}
+
+.icon_linkedin {
+    background-image: url('../../../icons/LINKEDIN_icon-icons.com_65488.svg');
+}
+
+.icon_facebook {
+    background-image: url('../../../icons/facebook_icon_153518.svg');
+}
+
+
+.icon_air_list {
+    background-image: url('../../../icons/air_list.svg');
+}
+
+.icon_air_home {
+    background-image: url('../../../icons/air_home.svg');
+}
+
+.icon_air_apps {
+    background-image: url('../../../icons/air_apps.svg');
+}
+
+.icon_air_notifications {
+    background-image: url('../../../icons/air_notifications.svg');
+}
+
+
+.icon_tool_edit {
+    background-image: url('../../../icons/tool_edit.svg');
+}
+
+
+.icon_britenet {
+    background-image: url('../../../icons/britenet_dot.png');
+}
+
+
+.icon_blink {
+    background-image: url('../../../icons/blink.png');
+}
+
+.icon_britesheet {
+    background-image: url('../../../icons/britesheet.png');
+}
+
+.icon_britewiki {
+    background-image: url('../../../icons/britewiki.png');
+}
+
+.icon_briteletter {
+    background-image: url('../../../icons/briteletter.png');
+}
+
+.icon_helpdesk {
+    background-image: url('../../../icons/helpdesk.png');
+}
+
+
+.icon_ready {
+    background-image: url('../../../icons/ready.png');
+}
+
+.icon_jira {
+    background-image: url('../../../icons/jira.png');
+}
+
+/* .icon_gitlab {
+    background-image: url('../../../icons/gitlab.png');
+} */
+
+.icon_asana {
+    background-image: url('../../../icons/asana.png');
+}
+
+.icon_mattermost {
+    background-image: url('../../../icons/mattermost.png');
+}
+
+
+.icon_testlink {
+    background-image: url('../../../icons/testlink.png');
+}
+
+.icon_redmine {
+    background-image: url('../../../icons/redmine.png');
+}
+
+.icon_briteoffice {
+    background-image: url('../../../icons/briteoffice.png');
+}
+
+.icon_rocket {
+    background-image: url('../../../icons/rocket.png');
+}
+
+
+.icon_google_calendar {
+    background-image: url('../../../icons/google_calendar.png');
+}
+
+.icon_google_gmail {
+    background-image: url('../../../icons/google_gmail.png');
+}
+
+.icon_google_chat {
+    background-image: url('../../../icons/google_chat.png');
+}
+
+.icon_google_drive {
+    background-image: url('../../../icons/google_drive.png');
+}
+
+
+.icon_salesforce {
+    background-image: url('../../../icons/salesforce.png');
+}
+
+
+.icon_search {
+    background-image: url('../../../icons/search.svg');
+}
+
+.icon_google {
+    background-image: url('../../../icons/google.svg');
+}
+
+
+.icon_light {
+    background-image: url('../../../icons/light.svg');
+}

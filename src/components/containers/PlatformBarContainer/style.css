@@ -1,0 +1,17 @@
+.platformbar_container_outer {
+    height: 64px;
+    width: calc(100% - 200px);
+    position: fixed;
+    top: 0px;
+}
+
+.platformbar_container_inner {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .platformbar_container_outer {
+        width: calc(100% - 10px);
+    }
+}

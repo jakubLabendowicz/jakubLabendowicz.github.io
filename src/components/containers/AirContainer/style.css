@@ -1,0 +1,10 @@
+.air_container_outer {
+    height: 500px;
+    /* width: 496px; */
+    margin-top: 64px;
+}
+
+.air_container_inner {
+    height: auto;
+    width: 100%;
+}

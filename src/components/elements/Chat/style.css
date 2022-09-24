@@ -1,0 +1,76 @@
+.chat_outer {
+    height: 100%;
+    width: 100%;
+}
+
+.chat_inner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat_header  {
+    height: 150px;
+    width: 400px;
+    /* background-image: url("../../../images/avatar_face_man_boy_profile_smiley_happy_people_icon_181659.svg"); */
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.chat_body {
+    height: 200px;
+    width: calc(100% - 40px);
+    padding: 0px 20px;
+}
+
+.chat_footer {
+    height: 48px;
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 0px 20px;
+}
+
+.chat_message_outer {
+    height: 48px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.chat_message_inner {
+    height: 36px;
+    width: auto;
+    background-color: var(--whiteColor);
+}
+
+.chat_message_left {
+    justify-content: flex-start;
+}
+
+.chat_message_left > .chat_message_inner {
+    border-radius: 20px 20px 20px 0px;
+}
+
+.chat_message_right {
+    justify-content: flex-end;
+}
+
+.chat_message_right > .chat_message_inner {
+    border-radius: 20px 20px 0px 20px;
+}
+
+
+.chat_answer {
+    height: 36px;
+    width: auto;
+    border: solid var(--whiteColor) 1px;
+    color: var(--whiteColor);
+    border-radius: 20px;
+}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.typography_outer {
+    height: 100%;
+    width: auto;
+    padding: 0px 12px;
+}
+
+.typography_inner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+
+
+.typography_platformbar_title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.typography_section_title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.typography_button_title {
+    font-size: 16px;
+    font-weight: 600;
+}

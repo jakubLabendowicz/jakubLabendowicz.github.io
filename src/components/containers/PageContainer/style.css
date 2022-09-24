@@ -1,0 +1,16 @@
+.page_container_outer {
+    height: auto;
+    width: calc(100% - 200px);
+    margin-top: 64px;
+}
+
+.page_container_inner {
+    height: auto;
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .page_container_outer {
+        width: calc(100% - 10px);
+    }
+}

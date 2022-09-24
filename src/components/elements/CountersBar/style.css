@@ -1,0 +1,14 @@
+.counters_bar_outer {
+    height: calc(128px - 16px);
+    width: 100%;
+    padding: 8px;
+}
+
+.counters_bar_inner {
+    height: 48px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+}

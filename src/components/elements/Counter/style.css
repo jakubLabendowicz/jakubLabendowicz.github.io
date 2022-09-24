@@ -1,0 +1,15 @@
+.counter_outer {
+    height: 128px;
+    width: 224px;
+    border-radius: 10px;
+}
+
+.counter_inner {
+    height: 128px;
+    width: 224px;
+}
+
+.counter_outer:hover {
+    background-color: #adb5bd;
+    cursor: pointer;
+}

@@ -1,0 +1,91 @@
+:root {
+    --blackColor: #000000;
+    --whiteColor: #FFFFFF;
+    --greyColor: #adb5bd;
+
+    --mainColor: #0d47a1;
+    --backgroundColor: #FFFFFF;
+    --backgroundHoverColor: #adb5bd;
+    --textColor: #000000;
+}
+
+
+
+
+.text_color_mainColor {
+    color: var(--mainColor);
+}
+
+.text_color_backgroundColor {
+    color: var(--backgroundColor);
+}
+
+.text_color_textColor {
+    color: var(--textColor);
+}
+
+.text_color_white {
+    color: var(--whiteColor);
+}
+
+.text_color_black {
+    color: var(--blackColor);
+}
+
+.text_color_grey {
+    color: var(--greyColor);
+}
+
+
+
+
+.background_color_mainColor {
+    background-color: var(--mainColor);
+}
+
+.background_color_backgroundColor {
+    background-color: var(--backgroundColor);
+}
+
+.background_color_textColor {
+    background-color: var(--textColor);
+}
+
+.background_color_white {
+    background-color: var(--whiteColor);
+}
+
+.background_color_black {
+    background-color: var(--blackColor);
+}
+
+.background_color_grey {
+    background-color: var(--greyColor);
+}
+
+
+
+
+.border_color_mainColor {
+    border: solid var(--mainColor) 1px;
+}
+
+.border_color_backgroundColor {
+    border: solid var(--backgroundColor) 1px;
+}
+
+.border_color_textColor {
+    border: solid var(--textColor) 1px;
+}
+
+.border_color_white {
+    border: solid var(--whiteColor) 1px;
+}
+
+.border_color_black {
+    border: solid var(--blackColor) 1px;
+}
+
+.border_color_grey {
+    border: solid var(--greyColor) 1px;
+}
