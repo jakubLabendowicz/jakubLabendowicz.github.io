@@ -1,5 +1,5 @@
 .header_outer {
-    min-height: calc(100vh - 64px - 16px - 32px - 64px);
+    height: calc(100vh - 64px - 16px - 32px - 64px);
     width: auto;
     width: 100%;
     display: flex;
@@ -20,4 +20,18 @@
     width: 100%;
     font-size: 60px;
     font-weight: 700;
+}
+
+@media screen and (max-width: 992px) {
+    .header_outer {
+        height: auto;
+    }
+
+    .header_box{
+        height: auto;
+    }
+
+    .header_title{
+        height: auto;
+    }
 }

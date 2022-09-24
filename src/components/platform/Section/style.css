@@ -22,6 +22,10 @@
     height: auto;
 }
 
+.section_column_80 {
+    width: calc(100% - 600px);
+}
+
 .section_header_outer {
     height: auto;
     width: 100%;
@@ -54,4 +58,10 @@
 .section_footer_inner {
     height: auto;
     width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .section_column_80 {
+        width: 100%;
+    }
 }

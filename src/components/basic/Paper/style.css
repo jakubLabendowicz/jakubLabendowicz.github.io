@@ -27,11 +27,6 @@
     width: 224px;
 }
 
-.paper_128_224 {
-    height: 128px;
-    width: 224px;
-}
-
 .paper_5450_300 {
     height: 450px;
     width: 300px;
@@ -56,4 +51,26 @@
 .paper_600_300 {
     height: 500px;
     width: 400px;
+}
+
+@media screen and (max-width: 992px) {
+    .paper_128_224 {
+        width: 100%;
+    }
+
+    .paper_5450_300 {
+        width: 100%;
+    }
+
+    .paper_256 {
+        width: 100%;
+    }
+
+    .paper_300 {
+        width: 100%;
+    }
+
+    .paper_500_1000 {
+        width: 100%;
+    }
 }
